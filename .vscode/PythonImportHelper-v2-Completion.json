@@ -294,7 +294,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'productos',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -303,7 +303,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'productos',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',\n    'pedidos',\n    'productos',",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -321,7 +321,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "ROOT_URLCONF = 'reto_grupo03.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "ROOT_URLCONF = 'reto_grupo03.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -330,7 +330,70 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "reto_grupo03.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03.reto_grupo03.settings",
+        "description": "reto_grupo03.reto_grupo03.settings",
+        "peekOfCode": "LOGIN_URL = '/login/'\nLOGIN_REDIRECT_URL = '/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'",
+        "detail": "reto_grupo03.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03.reto_grupo03.settings",
+        "description": "reto_grupo03.reto_grupo03.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database",
+        "detail": "reto_grupo03.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03.reto_grupo03.settings",
+        "description": "reto_grupo03.reto_grupo03.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases",
+        "detail": "reto_grupo03.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "reto_grupo03.reto_grupo03.settings",
+        "description": "reto_grupo03.reto_grupo03.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {",
+        "detail": "reto_grupo03.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "reto_grupo03.reto_grupo03.settings",
+        "description": "reto_grupo03.reto_grupo03.settings",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',",
+        "detail": "reto_grupo03.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03.reto_grupo03.settings",
+        "description": "reto_grupo03.reto_grupo03.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',",
+        "detail": "reto_grupo03.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "reto_grupo03.reto_grupo03.settings",
+        "description": "reto_grupo03.reto_grupo03.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -339,7 +402,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',\n        'HOST': '127.0.0.1',",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -348,7 +411,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',\n        'HOST': '127.0.0.1',\n        'PORT': '5432',        \n    }\n}",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -375,7 +438,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -384,7 +447,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -393,7 +456,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -402,7 +465,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -411,7 +474,7 @@
         "kind": 5,
         "importPath": "reto_grupo03.reto_grupo03.settings",
         "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
         "detail": "reto_grupo03.reto_grupo03.settings",
         "documentation": {}
     },
@@ -436,10 +499,10 @@
     {
         "label": "main",
         "kind": 2,
-        "importPath": "manage",
-        "description": "manage",
+        "importPath": "reto_grupo03.manage",
+        "description": "reto_grupo03.manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'reto_grupo03.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
-        "detail": "manage",
+        "detail": "reto_grupo03.manage",
         "documentation": {}
     }
 ]

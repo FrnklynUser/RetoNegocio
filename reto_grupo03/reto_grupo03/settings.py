@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
+    'pedidos',
     'productos',
+    'promociones',
+    'templates',
+
+    
 ]
 
 MIDDLEWARE = [
@@ -59,6 +65,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -66,6 +73,18 @@ TEMPLATES = [
         },
     },
 ]
+
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 WSGI_APPLICATION = 'reto_grupo03.wsgi.application'
 
@@ -75,8 +94,12 @@ WSGI_APPLICATION = 'reto_grupo03.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db_reto',
+        'USER': 'admin_reto',
+        'PASSWORD': 'root',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',        
     }
 }
 
@@ -121,3 +144,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+print("Ruta de templates:", BASE_DIR / 'templates' / 'core' / 'index.html')
