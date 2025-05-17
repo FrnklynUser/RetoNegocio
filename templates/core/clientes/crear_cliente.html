@@ -1,0 +1,189 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="max-w-3xl mx-auto">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-800">Crear Cliente</h2>
+            </div>
+            <div class="p-6">
+                {% if messages %}
+                <div class="mb-6">
+                    {% for message in messages %}
+                    <div class="p-4 rounded-md {% if message.tags == 'success' %}bg-green-50 text-green-800{% else %}bg-red-50 text-red-800{% endif %}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="post" class="space-y-6" novalidate>
+                    {% csrf_token %}
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Identificación -->
+                        <div class="space-y-2">
+                            <label for="id_tipo_identificacion" class="block text-sm font-medium text-gray-700">
+                                Tipo identificación
+                            </label>
+                            <select name="tipo_identificacion" 
+                                    id="id_tipo_identificacion" 
+                                    required 
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                <option value="">---------</option>
+                                <option value="1">DNI</option>
+                                <option value="2">RUC</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="id_numero_identificacion" class="block text-sm font-medium text-gray-700">
+                                Número identificación
+                            </label>
+                            <input type="text" 
+                                   name="numero_identificacion" 
+                                   id="id_numero_identificacion" 
+                                   maxlength="20" 
+                                   required 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <!-- Nombres y Apellidos -->
+                        <div class="space-y-2">
+                            <label for="id_nombres" class="block text-sm font-medium text-gray-700">
+                                Nombres
+                            </label>
+                            <input type="text" 
+                                   name="nombres" 
+                                   id="id_nombres" 
+                                   maxlength="100" 
+                                   required 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="id_apellidos" class="block text-sm font-medium text-gray-700">
+                                Apellidos
+                            </label>
+                            <input type="text" 
+                                   name="apellidos" 
+                                   id="id_apellidos" 
+                                   maxlength="100" 
+                                   required 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <!-- Nombre Comercial y Dirección -->
+                        <div class="space-y-2 col-span-2">
+                            <label for="id_nombre_comercial" class="block text-sm font-medium text-gray-700">
+                                Nombre comercial
+                            </label>
+                            <input type="text" 
+                                   name="nombre_comercial" 
+                                   id="id_nombre_comercial" 
+                                   maxlength="200" 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <div class="space-y-2 col-span-2">
+                            <label for="id_direccion" class="block text-sm font-medium text-gray-700">
+                                Dirección
+                            </label>
+                            <input type="text" 
+                                   name="direccion" 
+                                   id="id_direccion" 
+                                   maxlength="200" 
+                                   required 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <!-- Contacto -->
+                        <div class="space-y-2">
+                            <label for="id_telefono" class="block text-sm font-medium text-gray-700">
+                                Teléfono
+                            </label>
+                            <input type="text" 
+                                   name="telefono" 
+                                   id="id_telefono" 
+                                   maxlength="20" 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="id_email" class="block text-sm font-medium text-gray-700">
+                                Email
+                            </label>
+                            <input type="email" 
+                                   name="email" 
+                                   id="id_email" 
+                                   maxlength="254" 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+
+                        <!-- Información Comercial -->
+                        <div class="space-y-2">
+                            <label for="id_canal" class="block text-sm font-medium text-gray-700">
+                                Canal
+                            </label>
+                            <select name="canal" 
+                                    id="id_canal" 
+                                    required 
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                <option value="">---------</option>
+                                <option value="1">Mayorista</option>
+                                <option value="2">Minorista</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="id_condicion_venta" class="block text-sm font-medium text-gray-700">
+                                Condición venta
+                            </label>
+                            <select name="condicion_venta" 
+                                    id="id_condicion_venta" 
+                                    required 
+                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                                <option value="">---------</option>
+                                <option value="1">Contado</option>
+                                <option value="2">Crédito</option>
+                            </select>
+                        </div>
+
+                        <!-- Límite de Crédito -->
+                        <div class="space-y-2 col-span-2">
+                            <label for="id_limite_credito" class="block text-sm font-medium text-gray-700">
+                                Límite crédito
+                            </label>
+                            <input type="number" 
+                                   name="limite_credito" 
+                                   id="id_limite_credito" 
+                                   value="0" 
+                                   step="0.01" 
+                                   required 
+                                   class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-right">
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-end space-x-4 pt-4">
+                        <a href="{% url 'core:lista_clientes' %}" class="bg-gray-100 text-gray-800 hover:bg-gray-200 font-bold py-2 px-4 rounded">
+                            <i class="fas fa-times me-2"></i>Cancelar
+                        </a>
+                        <button type="submit" class="bg-blue-500 text-white hover:bg-blue-600 font-bold py-2 px-4 rounded">
+                            <i class="fas fa-save me-2"></i>Crear Cliente
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .me-2 {
+        margin-right: 0.5rem;
+    }
+</style>
+{% endblock %} 

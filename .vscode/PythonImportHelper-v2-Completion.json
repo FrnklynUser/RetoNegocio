@@ -1,6 +1,529 @@
 [
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "Pedido",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoItem",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Pedido",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoItem",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Grupo",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "LineaArticulo",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Articulo",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "CanalCliente",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Vendedor",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "TipoIdentificacion",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "CanalCliente",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionVenta",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "GrupoProveedor",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "LineaArticulo",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "SubLineaArticulo",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sucursal",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "CanalCliente",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "importPath": "promociones.models",
+        "description": "promociones.models",
+        "isExtraImport": true,
+        "detail": "promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "ArticuloPromocion",
+        "importPath": "promociones.models",
+        "description": "promociones.models",
+        "isExtraImport": true,
+        "detail": "promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "importPath": "promociones.models",
+        "description": "promociones.models",
+        "isExtraImport": true,
+        "detail": "promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "TipoPromocion",
+        "importPath": "promociones.models",
+        "description": "promociones.models",
+        "isExtraImport": true,
+        "detail": "promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "importPath": "promociones.models",
+        "description": "promociones.models",
+        "isExtraImport": true,
+        "detail": "promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "procesar_promociones",
+        "importPath": "core.views",
+        "description": "core.views",
+        "isExtraImport": true,
+        "detail": "core.views",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "BaseCommand",
+        "importPath": "django.core.management.base",
+        "description": "django.core.management.base",
+        "isExtraImport": true,
+        "detail": "django.core.management.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseCommand",
+        "importPath": "django.core.management.base",
+        "description": "django.core.management.base",
+        "isExtraImport": true,
+        "detail": "django.core.management.base",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -17,6 +540,14 @@
     },
     {
         "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -72,43 +603,35 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Articulo",
+        "importPath": "productos.models",
+        "description": "productos.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "productos.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Articulo",
+        "importPath": "productos.models",
+        "description": "productos.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "productos.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Articulo",
+        "importPath": "productos.models",
+        "description": "productos.models",
         "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "productos.models",
         "documentation": {}
     },
     {
@@ -136,7 +659,63 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -160,11 +739,173 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ArticuloForm",
+        "importPath": "core.forms",
+        "description": "core.forms",
+        "isExtraImport": true,
+        "detail": "core.forms",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -193,11 +934,19 @@
         "documentation": {}
     },
     {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
+        "label": "get_schema_view",
+        "importPath": "drf_yasg.views",
+        "description": "drf_yasg.views",
         "isExtraImport": true,
-        "detail": "django.urls",
+        "detail": "drf_yasg.views",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
         "documentation": {}
     },
     {
@@ -218,291 +967,1029 @@
         "documentation": {}
     },
     {
-        "label": "CoreConfig",
+        "label": "ArticuloPromocionSerializer",
         "kind": 6,
-        "importPath": "reto_grupo03.core.apps",
-        "description": "reto_grupo03.core.apps",
-        "peekOfCode": "class CoreConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'core'",
-        "detail": "reto_grupo03.core.apps",
+        "importPath": "reto_grupo03_test.api.serializers",
+        "description": "reto_grupo03_test.api.serializers",
+        "peekOfCode": "class ArticuloPromocionSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ArticuloPromocion\n        fields = ['id', 'articulo', 'es_bonificacion', 'cantidad_bonificacion']\nclass PromocionSerializer(serializers.ModelSerializer):\n    articulos = ArticuloPromocionSerializer(many=True, read_only=True)\n    class Meta:\n        model = Promocion\n        fields = [\n            'id', 'codigo', 'nombre', 'empresa', 'sucursal', 'canal_cliente',",
+        "detail": "reto_grupo03_test.api.serializers",
         "documentation": {}
     },
     {
-        "label": "PedidosConfig",
+        "label": "PromocionSerializer",
         "kind": 6,
-        "importPath": "reto_grupo03.pedidos.apps",
-        "description": "reto_grupo03.pedidos.apps",
-        "peekOfCode": "class PedidosConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'pedidos'",
-        "detail": "reto_grupo03.pedidos.apps",
+        "importPath": "reto_grupo03_test.api.serializers",
+        "description": "reto_grupo03_test.api.serializers",
+        "peekOfCode": "class PromocionSerializer(serializers.ModelSerializer):\n    articulos = ArticuloPromocionSerializer(many=True, read_only=True)\n    class Meta:\n        model = Promocion\n        fields = [\n            'id', 'codigo', 'nombre', 'empresa', 'sucursal', 'canal_cliente',\n            'tipo_promocion', 'fecha_inicio', 'fecha_fin', 'estado',\n            'cantidad_minima', 'cantidad_bonificacion', 'monto_minimo',\n            'articulos'\n        ]",
+        "detail": "reto_grupo03_test.api.serializers",
         "documentation": {}
     },
     {
-        "label": "ProductosConfig",
+        "label": "PedidoItemSerializer",
         "kind": 6,
-        "importPath": "reto_grupo03.productos.apps",
-        "description": "reto_grupo03.productos.apps",
-        "peekOfCode": "class ProductosConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'productos'",
-        "detail": "reto_grupo03.productos.apps",
+        "importPath": "reto_grupo03_test.api.serializers",
+        "description": "reto_grupo03_test.api.serializers",
+        "peekOfCode": "class PedidoItemSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = PedidoItem\n        fields = ['articulo', 'cantidad', 'precio_unitario', 'subtotal']\nclass PedidoSerializer(serializers.ModelSerializer):\n    items = PedidoItemSerializer(many=True, source='pedidoitem_set')\n    class Meta:\n        model = Pedido\n        fields = ['id', 'cliente', 'fecha', 'monto_total', 'items']",
+        "detail": "reto_grupo03_test.api.serializers",
         "documentation": {}
     },
     {
-        "label": "PromocionesConfig",
+        "label": "PedidoSerializer",
         "kind": 6,
-        "importPath": "reto_grupo03.promociones.apps",
-        "description": "reto_grupo03.promociones.apps",
-        "peekOfCode": "class PromocionesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'promociones'",
-        "detail": "reto_grupo03.promociones.apps",
+        "importPath": "reto_grupo03_test.api.serializers",
+        "description": "reto_grupo03_test.api.serializers",
+        "peekOfCode": "class PedidoSerializer(serializers.ModelSerializer):\n    items = PedidoItemSerializer(many=True, source='pedidoitem_set')\n    class Meta:\n        model = Pedido\n        fields = ['id', 'cliente', 'fecha', 'monto_total', 'items']",
+        "detail": "reto_grupo03_test.api.serializers",
         "documentation": {}
     },
     {
-        "label": "application",
+        "label": "router",
         "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.asgi",
-        "description": "reto_grupo03.reto_grupo03.asgi",
-        "peekOfCode": "application = get_asgi_application()",
-        "detail": "reto_grupo03.reto_grupo03.asgi",
-        "documentation": {}
-    },
-    {
-        "label": "BASE_DIR",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-)_ihv!z9bdrt$6_go1i2gmwn*)=_81mk)$aknqc3)=3x5#f98y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "SECRET_KEY",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-)_ihv!z9bdrt$6_go1i2gmwn*)=_81mk)$aknqc3)=3x5#f98y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "DEBUG",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "ALLOWED_HOSTS",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "INSTALLED_APPS",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',\n    'pedidos',\n    'productos',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "MIDDLEWARE",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'reto_grupo03.urls'",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "ROOT_URLCONF",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "ROOT_URLCONF = 'reto_grupo03.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "TEMPLATES",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "LOGIN_URL",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "LOGIN_URL = '/login/'\nLOGIN_REDIRECT_URL = '/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "LOGIN_REDIRECT_URL",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "STATIC_URL",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "STATICFILES_DIRS",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "STATIC_ROOT",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "MEDIA_URL",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "MEDIA_ROOT",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "MEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "WSGI_APPLICATION",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',\n        'HOST': '127.0.0.1',",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "DATABASES",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',\n        'HOST': '127.0.0.1',\n        'PORT': '5432',        \n    }\n}",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "AUTH_PASSWORD_VALIDATORS",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "LANGUAGE_CODE",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "TIME_ZONE",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "USE_I18N",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "USE_TZ",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "STATIC_URL",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
-        "detail": "reto_grupo03.reto_grupo03.settings",
-        "documentation": {}
-    },
-    {
-        "label": "DEFAULT_AUTO_FIELD",
-        "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.settings",
-        "description": "reto_grupo03.reto_grupo03.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nprint(\"Ruta de templates:\", BASE_DIR / 'templates' / 'core' / 'index.html')",
-        "detail": "reto_grupo03.reto_grupo03.settings",
+        "importPath": "reto_grupo03_test.api.urls",
+        "description": "reto_grupo03_test.api.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'promociones', views.PromocionViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path('check-promotions/', views.check_promotions, name='check-promotions'),\n]",
+        "detail": "reto_grupo03_test.api.urls",
         "documentation": {}
     },
     {
         "label": "urlpatterns",
         "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.urls",
-        "description": "reto_grupo03.reto_grupo03.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
-        "detail": "reto_grupo03.reto_grupo03.urls",
+        "importPath": "reto_grupo03_test.api.urls",
+        "description": "reto_grupo03_test.api.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('check-promotions/', views.check_promotions, name='check-promotions'),\n]",
+        "detail": "reto_grupo03_test.api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionViewSet",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.api.views",
+        "description": "reto_grupo03_test.api.views",
+        "peekOfCode": "class PromocionViewSet(viewsets.ModelViewSet):\n    \"\"\"\n    API endpoint for managing promotions\n    \"\"\"\n    queryset = Promocion.objects.all()\n    serializer_class = PromocionSerializer\n@api_view(['POST'])\ndef check_promotions(request):\n    \"\"\"\n    API endpoint to check applicable promotions for an order",
+        "detail": "reto_grupo03_test.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "check_promotions",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.api.views",
+        "description": "reto_grupo03_test.api.views",
+        "peekOfCode": "def check_promotions(request):\n    \"\"\"\n    API endpoint to check applicable promotions for an order\n    Expected payload:\n    {\n        \"cliente_id\": 1,\n        \"items\": [\n            {\n                \"articulo_id\": 1,\n                \"cantidad\": 48,",
+        "detail": "reto_grupo03_test.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.management.commands.import_data",
+        "description": "reto_grupo03_test.core.management.commands.import_data",
+        "peekOfCode": "class Command(BaseCommand):\n    help = 'Import data from Excel files'\n    def handle(self, *args, **kwargs):\n        # Import Empresas (assuming a default empresa if not provided in Excel)\n        empresa, _ = Empresa.objects.get_or_create(nombre='Default Empresa')\n        # Import Grupos (from templeateimportGrupos.xlsx)\n        try:\n            df_grupos = pd.read_excel('TemplateImportarGrupos.xlsx')\n            for _, row in df_grupos.iterrows():\n                Grupo.objects.get_or_create(",
+        "detail": "reto_grupo03_test.core.management.commands.import_data",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.management.commands.initialize_data",
+        "description": "reto_grupo03_test.core.management.commands.initialize_data",
+        "peekOfCode": "class Command(BaseCommand):\n    help = 'Initialize basic data for the application'\n    def handle(self, *args, **kwargs):\n        self.stdout.write('Initializing basic data...')\n        # Crear tipos de identificación\n        self.stdout.write('Creating identification types...')\n        TipoIdentificacion.objects.get_or_create(codigo='DNI', defaults={'descripcion': 'DNI'})\n        TipoIdentificacion.objects.get_or_create(codigo='RUC', defaults={'descripcion': 'RUC'})\n        # Crear canales de cliente\n        self.stdout.write('Creating customer channels...')",
+        "detail": "reto_grupo03_test.core.management.commands.initialize_data",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.migrations.0001_initial",
+        "description": "reto_grupo03_test.core.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CanalCliente',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('codigo', models.CharField(max_length=20, unique=True)),",
+        "detail": "reto_grupo03_test.core.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.migrations.0002_alter_articulo_unique_together_and_more",
+        "description": "reto_grupo03_test.core.migrations.0002_alter_articulo_unique_together_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterUniqueTogether(\n            name='articulo',\n            unique_together=None,\n        ),\n        migrations.RemoveField(",
+        "detail": "reto_grupo03_test.core.migrations.0002_alter_articulo_unique_together_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "description": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0002_alter_articulo_unique_together_and_more'),\n        ('productos', '0001_initial'),\n    ]\n    operations = [\n        migrations.RunPython(disable_foreign_key_checks),\n        migrations.RemoveField(\n            model_name='bonificacion',\n            name='promocion',",
+        "detail": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "disable_foreign_key_checks",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "description": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "peekOfCode": "def disable_foreign_key_checks(apps, schema_editor):\n    if schema_editor.connection.vendor == 'postgresql':\n        schema_editor.execute('SET CONSTRAINTS ALL DEFERRED')\ndef enable_foreign_key_checks(apps, schema_editor):\n    if schema_editor.connection.vendor == 'postgresql':\n        schema_editor.execute('SET CONSTRAINTS ALL IMMEDIATE')\nclass Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0002_alter_articulo_unique_together_and_more'),\n        ('productos', '0001_initial'),",
+        "detail": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "enable_foreign_key_checks",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "description": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "peekOfCode": "def enable_foreign_key_checks(apps, schema_editor):\n    if schema_editor.connection.vendor == 'postgresql':\n        schema_editor.execute('SET CONSTRAINTS ALL IMMEDIATE')\nclass Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0002_alter_articulo_unique_together_and_more'),\n        ('productos', '0001_initial'),\n    ]\n    operations = [\n        migrations.RunPython(disable_foreign_key_checks),",
+        "detail": "reto_grupo03_test.core.migrations.0003_alter_pedidoitem_articulo_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class EmpresaAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'ruc', 'estado')\n    search_fields = ('codigo', 'nombre', 'ruc')\n    list_filter = ('estado',)\n@admin.register(Sucursal)\nclass SucursalAdmin(admin.ModelAdmin):\n    list_display = ('empresa', 'codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('empresa', 'estado')\n@admin.register(TipoIdentificacion)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SucursalAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class SucursalAdmin(admin.ModelAdmin):\n    list_display = ('empresa', 'codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('empresa', 'estado')\n@admin.register(TipoIdentificacion)\nclass TipoIdentificacionAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(CondicionVenta)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "TipoIdentificacionAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class TipoIdentificacionAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(CondicionVenta)\nclass CondicionVentaAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'dias_credito', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(GrupoProveedor)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionVentaAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class CondicionVentaAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'dias_credito', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(GrupoProveedor)\nclass GrupoProveedorAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(LineaArticulo)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "GrupoProveedorAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class GrupoProveedorAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(LineaArticulo)\nclass LineaArticuloAdmin(admin.ModelAdmin):\n    list_display = ('grupo_proveedor', 'codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('grupo_proveedor', 'estado')\n@admin.register(SubLineaArticulo)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "LineaArticuloAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class LineaArticuloAdmin(admin.ModelAdmin):\n    list_display = ('grupo_proveedor', 'codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('grupo_proveedor', 'estado')\n@admin.register(SubLineaArticulo)\nclass SubLineaArticuloAdmin(admin.ModelAdmin):\n    list_display = ('linea_articulo', 'codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('linea_articulo', 'estado')\n@admin.register(CanalCliente)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SubLineaArticuloAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class SubLineaArticuloAdmin(admin.ModelAdmin):\n    list_display = ('linea_articulo', 'codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('linea_articulo', 'estado')\n@admin.register(CanalCliente)\nclass CanalClienteAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(Vendedor)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CanalClienteAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class CanalClienteAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'estado')\n    search_fields = ('codigo', 'nombre')\n    list_filter = ('estado',)\n@admin.register(Vendedor)\nclass VendedorAdmin(admin.ModelAdmin):\n    list_display = ('nombres', 'apellidos', 'tipo_identificacion', 'numero_identificacion', 'canal', 'estado')\n    search_fields = ('nombres', 'apellidos', 'numero_identificacion')\n    list_filter = ('tipo_identificacion', 'canal', 'estado')\n@admin.register(Cliente)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "VendedorAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class VendedorAdmin(admin.ModelAdmin):\n    list_display = ('nombres', 'apellidos', 'tipo_identificacion', 'numero_identificacion', 'canal', 'estado')\n    search_fields = ('nombres', 'apellidos', 'numero_identificacion')\n    list_filter = ('tipo_identificacion', 'canal', 'estado')\n@admin.register(Cliente)\nclass ClienteAdmin(admin.ModelAdmin):\n    list_display = ('nombre_comercial', 'nombres', 'apellidos', 'tipo_identificacion', 'numero_identificacion', 'canal', 'estado')\n    search_fields = ('nombre_comercial', 'nombres', 'apellidos', 'numero_identificacion')\n    list_filter = ('tipo_identificacion', 'canal', 'estado')\n@admin.register(Pedido)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class ClienteAdmin(admin.ModelAdmin):\n    list_display = ('nombre_comercial', 'nombres', 'apellidos', 'tipo_identificacion', 'numero_identificacion', 'canal', 'estado')\n    search_fields = ('nombre_comercial', 'nombres', 'apellidos', 'numero_identificacion')\n    list_filter = ('tipo_identificacion', 'canal', 'estado')\n@admin.register(Pedido)\nclass PedidoAdmin(admin.ModelAdmin):\n    list_display = ('id', 'cliente', 'vendedor', 'fecha', 'monto_total', 'estado')\n    search_fields = ('cliente__nombre_comercial', 'cliente__nombres', 'vendedor__nombres')\n    list_filter = ('estado',)\n    date_hierarchy = 'fecha'",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class PedidoAdmin(admin.ModelAdmin):\n    list_display = ('id', 'cliente', 'vendedor', 'fecha', 'monto_total', 'estado')\n    search_fields = ('cliente__nombre_comercial', 'cliente__nombres', 'vendedor__nombres')\n    list_filter = ('estado',)\n    date_hierarchy = 'fecha'\n@admin.register(PedidoItem)\nclass PedidoItemAdmin(admin.ModelAdmin):\n    list_display = ('pedido', 'articulo', 'cantidad', 'precio_unitario', 'subtotal', 'estado')\n    search_fields = ('pedido__id', 'articulo__nombre')\n    list_filter = ('estado',)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoItemAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.admin",
+        "description": "reto_grupo03_test.core.admin",
+        "peekOfCode": "class PedidoItemAdmin(admin.ModelAdmin):\n    list_display = ('pedido', 'articulo', 'cantidad', 'precio_unitario', 'subtotal', 'estado')\n    search_fields = ('pedido__id', 'articulo__nombre')\n    list_filter = ('estado',)",
+        "detail": "reto_grupo03_test.core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CoreConfig",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.apps",
+        "description": "reto_grupo03_test.core.apps",
+        "peekOfCode": "class CoreConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'core'",
+        "detail": "reto_grupo03_test.core.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteForm",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.forms",
+        "description": "reto_grupo03_test.core.forms",
+        "peekOfCode": "class ClienteForm(forms.ModelForm):\n    class Meta:\n        model = Cliente\n        fields = [\n            'tipo_identificacion',\n            'numero_identificacion',\n            'nombres',\n            'apellidos',\n            'nombre_comercial',\n            'direccion',",
+        "detail": "reto_grupo03_test.core.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ArticuloForm",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.forms",
+        "description": "reto_grupo03_test.core.forms",
+        "peekOfCode": "class ArticuloForm(forms.ModelForm):\n    class Meta:\n        model = Articulo\n        fields = [\n            'empresa',\n            'sub_linea',\n            'codigo',\n            'codigo_barra',\n            'nombre',\n            'descripcion',",
+        "detail": "reto_grupo03_test.core.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class Empresa(models.Model):\n    codigo = models.CharField(max_length=20, unique=True)\n    nombre = models.CharField(max_length=100)\n    ruc = models.CharField(max_length=11, unique=True)\n    direccion = models.CharField(max_length=200)\n    telefono = models.CharField(max_length=20, blank=True, null=True)\n    email = models.EmailField(blank=True, null=True)\n    estado = models.BooleanField(default=True)\n    fecha_creacion = models.DateTimeField(auto_now_add=True)\n    fecha_actualizacion = models.DateTimeField(auto_now=True)",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sucursal",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class Sucursal(models.Model):\n    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)\n    codigo = models.CharField(max_length=20)\n    nombre = models.CharField(max_length=100)\n    direccion = models.CharField(max_length=200)\n    telefono = models.CharField(max_length=20, blank=True, null=True)\n    email = models.EmailField(blank=True, null=True)\n    estado = models.BooleanField(default=True)\n    fecha_creacion = models.DateTimeField(auto_now_add=True)\n    fecha_actualizacion = models.DateTimeField(auto_now=True)",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "TipoIdentificacion",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class TipoIdentificacion(models.Model):\n    codigo = models.CharField(max_length=20, unique=True)\n    nombre = models.CharField(max_length=100)\n    descripcion = models.TextField(blank=True, null=True)\n    estado = models.BooleanField(default=True)\n    def __str__(self):\n        return self.nombre\n    class Meta:\n        verbose_name = \"Tipo de Identificación\"\n        verbose_name_plural = \"Tipos de Identificación\"",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionVenta",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class CondicionVenta(models.Model):\n    codigo = models.CharField(max_length=20, unique=True)\n    nombre = models.CharField(max_length=100)\n    descripcion = models.TextField(blank=True, null=True)\n    dias_credito = models.IntegerField(default=0)\n    estado = models.BooleanField(default=True)\n    def __str__(self):\n        return self.nombre\n    class Meta:\n        verbose_name = \"Condición de Venta\"",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "GrupoProveedor",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class GrupoProveedor(models.Model):\n    codigo = models.CharField(max_length=20, unique=True)\n    nombre = models.CharField(max_length=100)\n    descripcion = models.TextField(blank=True, null=True)\n    estado = models.BooleanField(default=True)\n    def __str__(self):\n        return self.nombre\n    class Meta:\n        verbose_name = \"Grupo Proveedor\"\n        verbose_name_plural = \"Grupos Proveedores\"",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "LineaArticulo",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class LineaArticulo(models.Model):\n    grupo_proveedor = models.ForeignKey(GrupoProveedor, on_delete=models.CASCADE)\n    codigo = models.CharField(max_length=20)\n    nombre = models.CharField(max_length=100)\n    descripcion = models.TextField(blank=True, null=True)\n    estado = models.BooleanField(default=True)\n    def __str__(self):\n        return f\"{self.grupo_proveedor.nombre} - {self.nombre}\"\n    class Meta:\n        verbose_name = \"Línea de Artículo\"",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "SubLineaArticulo",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class SubLineaArticulo(models.Model):\n    linea_articulo = models.ForeignKey(LineaArticulo, on_delete=models.CASCADE)\n    codigo = models.CharField(max_length=20)\n    nombre = models.CharField(max_length=100)\n    descripcion = models.TextField(blank=True, null=True)\n    estado = models.BooleanField(default=True)\n    def __str__(self):\n        return f\"{self.linea_articulo.nombre} - {self.nombre}\"\n    class Meta:\n        verbose_name = \"Sub Línea de Artículo\"",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "CanalCliente",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class CanalCliente(models.Model):\n    codigo = models.CharField(max_length=20, unique=True)\n    nombre = models.CharField(max_length=100)\n    descripcion = models.TextField(blank=True, null=True)\n    estado = models.BooleanField(default=True)\n    def __str__(self):\n        return self.nombre\n    class Meta:\n        verbose_name = \"Canal de Cliente\"\n        verbose_name_plural = \"Canales de Cliente\"",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Vendedor",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class Vendedor(models.Model):\n    tipo_identificacion = models.ForeignKey(TipoIdentificacion, on_delete=models.CASCADE)\n    numero_identificacion = models.CharField(max_length=20)\n    nombres = models.CharField(max_length=100)\n    apellidos = models.CharField(max_length=100)\n    direccion = models.CharField(max_length=200, blank=True, null=True)\n    telefono = models.CharField(max_length=20, blank=True, null=True)\n    email = models.EmailField(blank=True, null=True)\n    canal = models.ForeignKey(CanalCliente, on_delete=models.CASCADE)\n    supervisor = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True)",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class Cliente(models.Model):\n    tipo_identificacion = models.ForeignKey(TipoIdentificacion, on_delete=models.CASCADE)\n    numero_identificacion = models.CharField(max_length=20)\n    nombres = models.CharField(max_length=100)\n    apellidos = models.CharField(max_length=100)\n    nombre_comercial = models.CharField(max_length=200, blank=True, null=True)\n    direccion = models.CharField(max_length=200)\n    telefono = models.CharField(max_length=20, blank=True, null=True)\n    email = models.EmailField(blank=True, null=True)\n    canal = models.ForeignKey(CanalCliente, on_delete=models.CASCADE)",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Pedido",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class Pedido(models.Model):\n    cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)\n    vendedor = models.ForeignKey(Vendedor, on_delete=models.CASCADE, null=True, blank=True)\n    fecha = models.DateTimeField(default=timezone.now)\n    monto_total = models.DecimalField(max_digits=10, decimal_places=2)\n    estado = models.BooleanField(default=True)\n    fecha_creacion = models.DateTimeField(auto_now_add=True)\n    fecha_actualizacion = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return f\"Pedido {self.id} - {self.cliente}\"",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoItem",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.core.models",
+        "description": "reto_grupo03_test.core.models",
+        "peekOfCode": "class PedidoItem(models.Model):\n    pedido = models.ForeignKey(Pedido, on_delete=models.CASCADE)\n    articulo = models.ForeignKey('productos.Articulo', on_delete=models.CASCADE)\n    cantidad = models.IntegerField()\n    precio_unitario = models.DecimalField(max_digits=10, decimal_places=2)\n    subtotal = models.DecimalField(max_digits=10, decimal_places=2)\n    estado = models.BooleanField(default=True)\n    def __str__(self):\n        return f\"{self.pedido} - {self.articulo}\"\n    class Meta:",
+        "detail": "reto_grupo03_test.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.core.urls",
+        "description": "reto_grupo03_test.core.urls",
+        "peekOfCode": "app_name = 'core'\nurlpatterns = [\n    # Authentication URLs\n    path('', views.dashboard, name='dashboard'),\n    path('login/', views.login_view, name='login'),\n    path('logout/', views.logout_view, name='logout'),\n    path('register/', views.register_view, name='register'),\n    path('password_reset/', auth_views.PasswordResetView.as_view(template_name='core/password_reset.html'), name='password_reset'),\n    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='core/password_reset_done.html'), name='password_reset_done'),\n    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='core/password_reset_confirm.html'), name='password_reset_confirm'),",
+        "detail": "reto_grupo03_test.core.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.core.urls",
+        "description": "reto_grupo03_test.core.urls",
+        "peekOfCode": "urlpatterns = [\n    # Authentication URLs\n    path('', views.dashboard, name='dashboard'),\n    path('login/', views.login_view, name='login'),\n    path('logout/', views.logout_view, name='logout'),\n    path('register/', views.register_view, name='register'),\n    path('password_reset/', auth_views.PasswordResetView.as_view(template_name='core/password_reset.html'), name='password_reset'),\n    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='core/password_reset_done.html'), name='password_reset_done'),\n    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='core/password_reset_confirm.html'), name='password_reset_confirm'),\n    path('reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='core/password_reset_complete.html'), name='password_reset_complete'),",
+        "detail": "reto_grupo03_test.core.urls",
+        "documentation": {}
+    },
+    {
+        "label": "register_view",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def register_view(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            user = form.save()\n            login(request, user)\n            messages.success(request, 'Registration successful.')\n            return redirect('core:dashboard')\n        else:\n            messages.error(request, 'Please correct the errors below.')",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == 'POST':\n        username = request.POST.get('username')\n        password = request.POST.get('password')\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('core:dashboard')\n        else:\n            messages.error(request, 'Invalid username or password.')",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_view",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def logout_view(request):\n    logout(request)\n    return redirect('core:login')\n@login_required\ndef dashboard(request):\n    promociones = Promocion.objects.filter(\n        estado=True,\n        fecha_inicio__lte=timezone.now(),\n        fecha_fin__gte=timezone.now()\n    ).select_related(",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def dashboard(request):\n    promociones = Promocion.objects.filter(\n        estado=True,\n        fecha_inicio__lte=timezone.now(),\n        fecha_fin__gte=timezone.now()\n    ).select_related(\n        'empresa', 'sucursal', 'canal_cliente'\n    ).prefetch_related('articulos')\n    context = {\n        'promociones': promociones",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "crear_pedido",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def crear_pedido(request):\n    if request.method == 'POST':\n        cliente_id = request.POST.get('cliente')\n        items = request.POST.getlist('items[]')\n        cantidades = request.POST.getlist('cantidades[]')\n        try:\n            cliente = Cliente.objects.get(id=cliente_id)\n            pedido = Pedido.objects.create(\n                cliente=cliente,\n                fecha=timezone.now(),",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "detalle_pedido",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def detalle_pedido(request, pedido_id):\n    pedido = Pedido.objects.get(id=pedido_id)\n    items = PedidoItem.objects.filter(pedido=pedido)\n    bonificaciones = procesar_promociones(pedido)\n    context = {\n        'pedido': pedido,\n        'items': items,\n        'bonificaciones': bonificaciones\n    }\n    return render(request, 'core/detalle_pedido.html', context)",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "procesar_promociones",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def procesar_promociones(pedido):\n    \"\"\"\n    Procesa las promociones aplicables a un pedido y retorna las bonificaciones correspondientes\n    \"\"\"\n    from promociones.services import PromocionService\n    # Preparar los items del pedido para el servicio\n    items = [\n        {\n            'articulo_id': item.articulo_id,\n            'cantidad': item.cantidad,",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "lista_clientes",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def lista_clientes(request):\n    clientes = Cliente.objects.filter(estado=True)\n    return render(request, 'core/clientes/lista_clientes.html', {'clientes': clientes})\n@login_required\ndef crear_cliente(request):\n    if request.method == 'POST':\n        form = ClienteForm(request.POST)\n        if form.is_valid():\n            cliente = form.save()\n            messages.success(request, 'Cliente registrado exitosamente.')",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "crear_cliente",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def crear_cliente(request):\n    if request.method == 'POST':\n        form = ClienteForm(request.POST)\n        if form.is_valid():\n            cliente = form.save()\n            messages.success(request, 'Cliente registrado exitosamente.')\n            return redirect('core:lista_clientes')\n    else:\n        form = ClienteForm()\n    return render(request, 'core/clientes/crear_cliente.html', {'form': form})",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "editar_cliente",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.core.views",
+        "description": "reto_grupo03_test.core.views",
+        "peekOfCode": "def editar_cliente(request, cliente_id):\n    cliente = get_object_or_404(Cliente, id=cliente_id)\n    if request.method == 'POST':\n        form = ClienteForm(request.POST, instance=cliente)\n        if form.is_valid():\n            form.save()\n            messages.success(request, 'Cliente actualizado exitosamente.')\n            return redirect('core:lista_clientes')\n    else:\n        form = ClienteForm(instance=cliente)",
+        "detail": "reto_grupo03_test.core.views",
+        "documentation": {}
+    },
+    {
+        "label": "PedidosConfig",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.pedidos.apps",
+        "description": "reto_grupo03_test.pedidos.apps",
+        "peekOfCode": "class PedidosConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'pedidos'",
+        "detail": "reto_grupo03_test.pedidos.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.productos.migrations.0001_initial",
+        "description": "reto_grupo03_test.productos.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('core', '0002_alter_articulo_unique_together_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Articulo',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "reto_grupo03_test.productos.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "transfer_articulos",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.migrations.0001_initial",
+        "description": "reto_grupo03_test.productos.migrations.0001_initial",
+        "peekOfCode": "def transfer_articulos(apps, schema_editor):\n    OldArticulo = apps.get_model('core', 'Articulo')\n    NewArticulo = apps.get_model('productos', 'Articulo')\n    for old_articulo in OldArticulo.objects.all():\n        NewArticulo.objects.create(\n            id=old_articulo.id,\n            empresa_id=old_articulo.empresa_id,\n            sub_linea_id=old_articulo.sub_linea_id,\n            codigo=old_articulo.codigo,\n            codigo_barra=old_articulo.codigo_barra,",
+        "detail": "reto_grupo03_test.productos.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_transfer",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.migrations.0001_initial",
+        "description": "reto_grupo03_test.productos.migrations.0001_initial",
+        "peekOfCode": "def reverse_transfer(apps, schema_editor):\n    NewArticulo = apps.get_model('productos', 'Articulo')\n    NewArticulo.objects.all().delete()\nclass Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('core', '0002_alter_articulo_unique_together_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(",
+        "detail": "reto_grupo03_test.productos.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "description": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('productos', '0001_initial'),\n        ('core', '0002_alter_articulo_unique_together_and_more'),\n    ]\n    operations = [\n        migrations.RunPython(disable_foreign_key_checks),\n        migrations.RunPython(\n            migrate_articulos_forward,\n            migrate_articulos_backward",
+        "detail": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "documentation": {}
+    },
+    {
+        "label": "disable_foreign_key_checks",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "description": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "peekOfCode": "def disable_foreign_key_checks(apps, schema_editor):\n    if schema_editor.connection.vendor == 'postgresql':\n        schema_editor.execute('SET CONSTRAINTS ALL DEFERRED')\ndef enable_foreign_key_checks(apps, schema_editor):\n    if schema_editor.connection.vendor == 'postgresql':\n        schema_editor.execute('SET CONSTRAINTS ALL IMMEDIATE')\ndef migrate_articulos_forward(apps, schema_editor):\n    CoreArticulo = apps.get_model('core', 'Articulo')\n    ProductosArticulo = apps.get_model('productos', 'Articulo')\n    Empresa = apps.get_model('core', 'Empresa')",
+        "detail": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "documentation": {}
+    },
+    {
+        "label": "enable_foreign_key_checks",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "description": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "peekOfCode": "def enable_foreign_key_checks(apps, schema_editor):\n    if schema_editor.connection.vendor == 'postgresql':\n        schema_editor.execute('SET CONSTRAINTS ALL IMMEDIATE')\ndef migrate_articulos_forward(apps, schema_editor):\n    CoreArticulo = apps.get_model('core', 'Articulo')\n    ProductosArticulo = apps.get_model('productos', 'Articulo')\n    Empresa = apps.get_model('core', 'Empresa')\n    SubLineaArticulo = apps.get_model('core', 'SubLineaArticulo')\n    # Get default empresa and sublinea\n    default_empresa = Empresa.objects.first()",
+        "detail": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "documentation": {}
+    },
+    {
+        "label": "migrate_articulos_forward",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "description": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "peekOfCode": "def migrate_articulos_forward(apps, schema_editor):\n    CoreArticulo = apps.get_model('core', 'Articulo')\n    ProductosArticulo = apps.get_model('productos', 'Articulo')\n    Empresa = apps.get_model('core', 'Empresa')\n    SubLineaArticulo = apps.get_model('core', 'SubLineaArticulo')\n    # Get default empresa and sublinea\n    default_empresa = Empresa.objects.first()\n    default_sublinea = SubLineaArticulo.objects.first()\n    if not default_empresa or not default_sublinea:\n        return  # Can't proceed without defaults",
+        "detail": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "documentation": {}
+    },
+    {
+        "label": "migrate_articulos_backward",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "description": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "peekOfCode": "def migrate_articulos_backward(apps, schema_editor):\n    ProductosArticulo = apps.get_model('productos', 'Articulo')\n    ProductosArticulo.objects.all().delete()\nclass Migration(migrations.Migration):\n    dependencies = [\n        ('productos', '0001_initial'),\n        ('core', '0002_alter_articulo_unique_together_and_more'),\n    ]\n    operations = [\n        migrations.RunPython(disable_foreign_key_checks),",
+        "detail": "reto_grupo03_test.productos.migrations.0002_migrate_articulos_data",
+        "documentation": {}
+    },
+    {
+        "label": "ArticuloAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.productos.admin",
+        "description": "reto_grupo03_test.productos.admin",
+        "peekOfCode": "class ArticuloAdmin(admin.ModelAdmin):\n    list_display = ('codigo', 'nombre', 'empresa', 'sub_linea', 'precio', 'estado')\n    search_fields = ('codigo', 'nombre', 'codigo_barra')\n    list_filter = ('empresa', 'sub_linea', 'estado')\n    list_per_page = 20",
+        "detail": "reto_grupo03_test.productos.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductosConfig",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.productos.apps",
+        "description": "reto_grupo03_test.productos.apps",
+        "peekOfCode": "class ProductosConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'productos'",
+        "detail": "reto_grupo03_test.productos.apps",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.productos.urls",
+        "description": "reto_grupo03_test.productos.urls",
+        "peekOfCode": "app_name = 'productos'\nurlpatterns = [\n    path('articulos/', views.lista_articulos, name='lista_articulos'),\n    path('articulos/crear/', views.crear_articulo, name='crear_articulo'),\n    path('articulos/editar/<int:articulo_id>/', views.editar_articulo, name='editar_articulo'),\n]",
+        "detail": "reto_grupo03_test.productos.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.productos.urls",
+        "description": "reto_grupo03_test.productos.urls",
+        "peekOfCode": "urlpatterns = [\n    path('articulos/', views.lista_articulos, name='lista_articulos'),\n    path('articulos/crear/', views.crear_articulo, name='crear_articulo'),\n    path('articulos/editar/<int:articulo_id>/', views.editar_articulo, name='editar_articulo'),\n]",
+        "detail": "reto_grupo03_test.productos.urls",
+        "documentation": {}
+    },
+    {
+        "label": "lista_articulos",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.views",
+        "description": "reto_grupo03_test.productos.views",
+        "peekOfCode": "def lista_articulos(request):\n    articulos = Articulo.objects.filter(estado=True)\n    return render(request, 'productos/lista_articulos.html', {'articulos': articulos})\n@login_required\ndef crear_articulo(request):\n    if request.method == 'POST':\n        form = ArticuloForm(request.POST)\n        if form.is_valid():\n            articulo = form.save()\n            messages.success(request, 'Artículo registrado exitosamente.')",
+        "detail": "reto_grupo03_test.productos.views",
+        "documentation": {}
+    },
+    {
+        "label": "crear_articulo",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.views",
+        "description": "reto_grupo03_test.productos.views",
+        "peekOfCode": "def crear_articulo(request):\n    if request.method == 'POST':\n        form = ArticuloForm(request.POST)\n        if form.is_valid():\n            articulo = form.save()\n            messages.success(request, 'Artículo registrado exitosamente.')\n            return redirect('lista_articulos')\n    else:\n        form = ArticuloForm()\n    return render(request, 'productos/crear_articulo.html', {'form': form})",
+        "detail": "reto_grupo03_test.productos.views",
+        "documentation": {}
+    },
+    {
+        "label": "editar_articulo",
+        "kind": 2,
+        "importPath": "reto_grupo03_test.productos.views",
+        "description": "reto_grupo03_test.productos.views",
+        "peekOfCode": "def editar_articulo(request, articulo_id):\n    articulo = get_object_or_404(Articulo, id=articulo_id)\n    if request.method == 'POST':\n        form = ArticuloForm(request.POST, instance=articulo)\n        if form.is_valid():\n            form.save()\n            messages.success(request, 'Artículo actualizado exitosamente.')\n            return redirect('lista_articulos')\n    else:\n        form = ArticuloForm(instance=articulo)",
+        "detail": "reto_grupo03_test.productos.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.migrations.0001_initial",
+        "description": "reto_grupo03_test.promociones.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('core', '0003_alter_pedidoitem_articulo_and_more'),\n        ('productos', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='TipoPromocion',\n            fields=[",
+        "detail": "reto_grupo03_test.promociones.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ArticuloPromocionInline",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.admin",
+        "description": "reto_grupo03_test.promociones.admin",
+        "peekOfCode": "class ArticuloPromocionInline(admin.TabularInline):\n    model = ArticuloPromocion\n    extra = 1\n    fields = ['articulo', 'es_bonificacion', 'cantidad_bonificacion']\n@admin.register(TipoPromocion)\nclass TipoPromocionAdmin(admin.ModelAdmin):\n    list_display = ['codigo', 'descripcion']\n    search_fields = ['codigo', 'descripcion']\n@admin.register(Promocion)\nclass PromocionAdmin(admin.ModelAdmin):",
+        "detail": "reto_grupo03_test.promociones.admin",
+        "documentation": {}
+    },
+    {
+        "label": "TipoPromocionAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.admin",
+        "description": "reto_grupo03_test.promociones.admin",
+        "peekOfCode": "class TipoPromocionAdmin(admin.ModelAdmin):\n    list_display = ['codigo', 'descripcion']\n    search_fields = ['codigo', 'descripcion']\n@admin.register(Promocion)\nclass PromocionAdmin(admin.ModelAdmin):\n    list_display = ['codigo', 'nombre', 'empresa', 'sucursal', 'canal_cliente', 'tipo_promocion', 'fecha_inicio', 'fecha_fin', 'estado']\n    search_fields = ['codigo', 'nombre']\n    list_filter = ['empresa', 'sucursal', 'canal_cliente', 'tipo_promocion', 'estado']\n    date_hierarchy = 'fecha_inicio'\n    inlines = [ArticuloPromocionInline]",
+        "detail": "reto_grupo03_test.promociones.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionAdmin",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.admin",
+        "description": "reto_grupo03_test.promociones.admin",
+        "peekOfCode": "class PromocionAdmin(admin.ModelAdmin):\n    list_display = ['codigo', 'nombre', 'empresa', 'sucursal', 'canal_cliente', 'tipo_promocion', 'fecha_inicio', 'fecha_fin', 'estado']\n    search_fields = ['codigo', 'nombre']\n    list_filter = ['empresa', 'sucursal', 'canal_cliente', 'tipo_promocion', 'estado']\n    date_hierarchy = 'fecha_inicio'\n    inlines = [ArticuloPromocionInline]\n    fieldsets = [\n        (None, {\n            'fields': ['empresa', 'sucursal', 'canal_cliente', 'codigo', 'nombre', 'descripcion', 'tipo_promocion', 'estado']\n        }),",
+        "detail": "reto_grupo03_test.promociones.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionesConfig",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.apps",
+        "description": "reto_grupo03_test.promociones.apps",
+        "peekOfCode": "class PromocionesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'promociones'",
+        "detail": "reto_grupo03_test.promociones.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TipoPromocion",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.models",
+        "description": "reto_grupo03_test.promociones.models",
+        "peekOfCode": "class TipoPromocion(models.Model):\n    VOLUMEN = 'VOL'\n    MONTO = 'MON'\n    TIPO_CHOICES = [\n        (VOLUMEN, 'Volumen'),\n        (MONTO, 'Monto'),\n    ]\n    codigo = models.CharField(max_length=3, primary_key=True, choices=TIPO_CHOICES)\n    descripcion = models.CharField(max_length=50)\n    def __str__(self):",
+        "detail": "reto_grupo03_test.promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.models",
+        "description": "reto_grupo03_test.promociones.models",
+        "peekOfCode": "class Promocion(models.Model):\n    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)\n    sucursal = models.ForeignKey(Sucursal, on_delete=models.CASCADE)\n    canal_cliente = models.ForeignKey(CanalCliente, on_delete=models.CASCADE, related_name='promociones')\n    codigo = models.CharField(max_length=20)\n    nombre = models.CharField(max_length=200)\n    descripcion = models.TextField(blank=True, null=True)\n    tipo_promocion = models.ForeignKey(TipoPromocion, on_delete=models.PROTECT)\n    fecha_inicio = models.DateTimeField()\n    fecha_fin = models.DateTimeField()",
+        "detail": "reto_grupo03_test.promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "ArticuloPromocion",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.models",
+        "description": "reto_grupo03_test.promociones.models",
+        "peekOfCode": "class ArticuloPromocion(models.Model):\n    promocion = models.ForeignKey(Promocion, on_delete=models.CASCADE, related_name='articulos')\n    articulo = models.ForeignKey(Articulo, on_delete=models.CASCADE, related_name='promociones')\n    es_bonificacion = models.BooleanField(default=False)\n    cantidad_bonificacion = models.IntegerField(null=True, blank=True, validators=[MinValueValidator(1)])\n    class Meta:\n        verbose_name = \"Artículo en Promoción\"\n        verbose_name_plural = \"Artículos en Promoción\"\n        unique_together = [['promocion', 'articulo', 'es_bonificacion']]\n    def clean(self):",
+        "detail": "reto_grupo03_test.promociones.models",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionService",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.services",
+        "description": "reto_grupo03_test.promociones.services",
+        "peekOfCode": "class PromocionService:\n    @staticmethod\n    def calcular_bonificaciones(\n        canal_cliente_id: int,\n        items: List[Dict[str, any]]  # [{'articulo_id': int, 'cantidad': int, 'precio': Decimal}]\n    ) -> List[Dict[str, any]]:  # returns [{'articulo_id': int, 'cantidad': int}]\n        \"\"\"\n        Calcula las bonificaciones aplicables según las promociones vigentes.\n        \"\"\"\n        # Obtener promociones activas para el canal",
+        "detail": "reto_grupo03_test.promociones.services",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.promociones.urls",
+        "description": "reto_grupo03_test.promociones.urls",
+        "peekOfCode": "app_name = 'promociones'\nurlpatterns = [\n    path('calcular-bonificaciones/', CalcularBonificacionesView.as_view(), name='calcular_bonificaciones'),\n]",
+        "detail": "reto_grupo03_test.promociones.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.promociones.urls",
+        "description": "reto_grupo03_test.promociones.urls",
+        "peekOfCode": "urlpatterns = [\n    path('calcular-bonificaciones/', CalcularBonificacionesView.as_view(), name='calcular_bonificaciones'),\n]",
+        "detail": "reto_grupo03_test.promociones.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CalcularBonificacionesView",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.promociones.views",
+        "description": "reto_grupo03_test.promociones.views",
+        "peekOfCode": "class CalcularBonificacionesView(View):\n    def post(self, request, *args, **kwargs):\n        try:\n            data = json.loads(request.body)\n            # Validar datos requeridos\n            if not all(key in data for key in ['canal_cliente_id', 'items']):\n                return JsonResponse({\n                    'error': 'Se requieren canal_cliente_id e items'\n                }, status=400)\n            # Validar estructura de items",
+        "detail": "reto_grupo03_test.promociones.views",
         "documentation": {}
     },
     {
         "label": "application",
         "kind": 5,
-        "importPath": "reto_grupo03.reto_grupo03.wsgi",
-        "description": "reto_grupo03.reto_grupo03.wsgi",
+        "importPath": "reto_grupo03_test.reto_grupo03.asgi",
+        "description": "reto_grupo03_test.reto_grupo03.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "reto_grupo03_test.reto_grupo03.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "EstadoEntidades",
+        "kind": 6,
+        "importPath": "reto_grupo03_test.reto_grupo03.choices",
+        "description": "reto_grupo03_test.reto_grupo03.choices",
+        "peekOfCode": "class EstadoEntidades(models.IntegerChoices):\n    ACTIVO = 1, \"Activo\"\n    INACTIVO = 9, \"Inactivo\"",
+        "detail": "reto_grupo03_test.reto_grupo03.choices",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-)_ihv!z9bdrt$6_go1i2gmwn*)=_81mk)$aknqc3)=3x5#f98y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-)_ihv!z9bdrt$6_go1i2gmwn*)=_81mk)$aknqc3)=3x5#f98y'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',\n    'pedidos',\n    'productos',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'reto_grupo03.urls'",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "ROOT_URLCONF = 'reto_grupo03.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "LOGIN_URL = 'login'\nLOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = 'dashboard'\nLOGOUT_REDIRECT_URL = 'login'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = 'login'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / 'media'\nWSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'reto_grupo03.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',\n        'HOST': '127.0.0.1',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_reto',\n        'USER': 'admin_reto',\n        'PASSWORD': 'root',\n        'HOST': '127.0.0.1',\n        'PORT': '5432',        \n    }\n}",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Authentication settings",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Authentication settings\nAUTHENTICATION_BACKENDS = [",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Authentication settings\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Authentication settings\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Authentication settings\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHENTICATION_BACKENDS",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.settings",
+        "description": "reto_grupo03_test.reto_grupo03.settings",
+        "peekOfCode": "AUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]",
+        "detail": "reto_grupo03_test.reto_grupo03.settings",
+        "documentation": {}
+    },
+    {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.urls",
+        "description": "reto_grupo03_test.reto_grupo03.urls",
+        "peekOfCode": "schema_view = get_schema_view(\n    openapi.Info(\n        title=\"Promotions Engine API\",\n        default_version='v1',\n        description=\"API for managing promotions and checking order bonifications\",\n    ),\n    public=True,\n    permission_classes=(permissions.AllowAny,),\n)\nurlpatterns = [",
+        "detail": "reto_grupo03_test.reto_grupo03.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.urls",
+        "description": "reto_grupo03_test.reto_grupo03.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    # Include app URLs\n    path('', include('core.urls', namespace='core')),\n    path('', include('productos.urls')),\n    path('', include('promociones.urls')),\n    # API URLs\n    path('api/', include('api.urls')),\n    path('api/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),\n    path('api/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),",
+        "detail": "reto_grupo03_test.reto_grupo03.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "reto_grupo03_test.reto_grupo03.wsgi",
+        "description": "reto_grupo03_test.reto_grupo03.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
-        "detail": "reto_grupo03.reto_grupo03.wsgi",
+        "detail": "reto_grupo03_test.reto_grupo03.wsgi",
         "documentation": {}
     },
     {
         "label": "main",
         "kind": 2,
-        "importPath": "reto_grupo03.manage",
-        "description": "reto_grupo03.manage",
+        "importPath": "reto_grupo03_test.manage",
+        "description": "reto_grupo03_test.manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'reto_grupo03.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
-        "detail": "reto_grupo03.manage",
+        "detail": "reto_grupo03_test.manage",
         "documentation": {}
     }
 ]
