@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Promociones Activas -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2 class="card-title h4 mb-0">Promociones Activas</h2>
+        </div>
+        <div class="card-body">
+            {% if promociones %}
+            <div class="row g-4">
+                {% for promocion in promociones %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">{{ promocion.nombre }}</h3>
+                            <div class="mt-3">
+                                <p><strong>Canal:</strong> {{ promocion.canal }}</p>
+                                <p><strong>Empresa:</strong> {{ promocion.empresa }}</p>
+                                <p><strong>Sucursal:</strong> {{ promocion.sucursal }}</p>
+                                <p><strong>Vigencia:</strong> {{ promocion.fecha_inicio|date:"d/m/Y" }} - {{ promocion.fecha_fin|date:"d/m/Y" }}</p>
+                                
+                                {% if promocion.condicion_cantidad %}
+                                <p class="mt-2">
+                                    <strong>Condición:</strong> Compra {{ promocion.condicion_cantidad }} unidades de {{ promocion.articulo_condicion }}
+                                </p>
+                                {% endif %}
+                                
+                                {% if promocion.condicion_monto %}
+                                <p class="mt-2">
+                                    <strong>Condición:</strong> Compra por S/ {{ promocion.condicion_monto }} en {{ promocion.articulo_condicion.sub_linea.linea_articulo }}
+                                </p>
+                                {% endif %}
+                                
+                                <div class="mt-2">
+                                    <strong>Bonificaciones:</strong>
+                                    <ul class="list-group list-group-flush mt-2">
+                                    {% for bonificacion in promocion.bonificacion_set.all %}
+                                        {% if bonificacion.articulo_bonificado %}
+                                        <li class="list-group-item">{{ bonificacion.cantidad_bonificada }} unidades de {{ bonificacion.articulo_bonificado }}</li>
+                                        {% endif %}
+                                        {% if bonificacion.descuento_porcentaje %}
+                                        <li class="list-group-item">{{ bonificacion.descuento_porcentaje }}% de descuento</li>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="text-muted">No hay promociones activas en este momento.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- API Documentation -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2 class="card-title h4 mb-0">API REST Documentation</h2>
+        </div>
+        <div class="card-body">
+            <div class="mb-4">
+                <!-- API Documentation Links -->
+                <div class="mb-4">
+                    <h3 class="h5 mb-3">Interactive Documentation</h3>
+                    <div class="d-flex gap-2">
+                        <a href="{% url 'schema-swagger-ui' %}" target="_blank" class="btn btn-primary">
+                            Swagger UI
+                        </a>
+                        <a href="{% url 'schema-redoc' %}" target="_blank" class="btn btn-success">
+                            ReDoc
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Example Usage -->
+                <div>
+                    <h3 class="h5 mb-3">Example API Usage</h3>
+                    
+                    <!-- Check Promotions Endpoint -->
+                    <div class="bg-light p-3 rounded mb-3">
+                        <h4 class="h6 mb-2">Check Promotions</h4>
+                        <p class="small text-muted mb-2">POST /api/check-promotions/</p>
+                        <div class="bg-dark text-light p-3 rounded">
+                            <pre class="mb-0"><code>{
+    "cliente_id": 1,
+    "items": [
+        {
+            "articulo_id": "AC0353",
+            "cantidad": 48,
+            "precio_unitario": 100.00
+        }
+    ]
+}</code></pre>
+                        </div>
+                        <p class="small text-muted mt-2">This endpoint checks applicable promotions for an order.</p>
+                    </div>
+
+                    <!-- List Promotions Endpoint -->
+                    <div class="bg-light p-3 rounded">
+                        <h4 class="h6 mb-2">List Active Promotions</h4>
+                        <p class="small text-muted mb-2">GET /api/promociones/</p>
+                        <p class="small text-muted">Lists all active promotions with their conditions and bonifications.</p>
+                    </div>
+                </div>
+
+                <!-- Curl Examples -->
+                <div class="mt-4">
+                    <h3 class="h5 mb-3">Curl Examples</h3>
+                    <div class="bg-dark text-light p-3 rounded">
+                        <pre class="mb-0"><code># Check promotions for an order
+curl -X POST http://localhost:8000/api/check-promotions/ \
+    -H "Content-Type: application/json" \
+    -d '{
+        "cliente_id": 1,
+        "items": [
+            {
+                "articulo_id": "AC0353",
+                "cantidad": 48,
+                "precio_unitario": 100.00
+            }
+        ]
+    }'
+
+# List all promotions
+curl http://localhost:8000/api/promociones/</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="d-flex justify-content-between">
+        <a href="{% url 'core:crear_pedido' %}" class="btn btn-primary">
+            <i class="fas fa-plus me-2"></i>Crear Nuevo Pedido
+        </a>
+    </div>
+</div>
+{% endblock %} 
