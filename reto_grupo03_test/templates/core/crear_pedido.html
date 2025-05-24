@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Crear Pedido{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title mb-0">Crear Nuevo Pedido</h3>
+                </div>
+                <div class="card-body">
+                    {% if messages %}
+                    <div class="mb-4">
+                        {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <form method="POST" id="pedidoForm">
+                        {% csrf_token %}
+                        
+                        <!-- Cliente -->
+                        <div class="mb-4">
+                            <label for="cliente" class="form-label">Cliente</label>
+                            <select name="cliente" id="cliente" required class="form-select">
+                                <option value="">Seleccione un cliente</option>
+                                {% for cliente in clientes %}
+                                <option value="{{ cliente.id }}">{{ cliente }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <!-- Items del Pedido -->
+                        <div class="mb-4">
+                            <label class="form-label">Items del Pedido</label>
+                            <div id="itemsList">
+                                <div class="item-row mb-3">
+                                    <div class="row g-3 align-items-end">
+                                        <div class="col-md-5">
+                                            <label class="form-label">Artículo</label>
+                                            <select name="items[]" required class="form-select">
+                                                <option value="">Seleccione un artículo</option>
+                                                {% for articulo in articulos %}
+                                                <option value="{{ articulo.id }}" data-precio="{{ articulo.precio }}">
+                                                    {{ articulo.codigo }} - {{ articulo.nombre }}
+                                                </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="form-label">Cantidad</label>
+                                            <input type="number" name="cantidades[]" min="1" required class="form-control text-end">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Subtotal</label>
+                                            <input type="text" readonly class="form-control subtotal text-end bg-light">
+                                        </div>
+                                        <div class="col-md-2 text-end">
+                                            <button type="button" class="btn btn-outline-danger remove-item">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mb-4">
+                            <div class="col">
+                                <button type="button" id="addItem" class="btn btn-outline-primary">
+                                    <i class="fas fa-plus me-2"></i>Agregar Item
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="text-end">
+                                    <span class="form-label me-2">Total:</span>
+                                    <span id="totalPedido" class="h4 mb-0">S/ 0.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <a href="{% url 'core:dashboard' %}" class="btn btn-secondary">
+                                <i class="fas fa-times me-2"></i>Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save me-2"></i>Crear Pedido
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .form-control, .form-select {
+        border-radius: 0.25rem;
+        padding: 0.75rem;
+        width: 100%;
+        border: 1px solid #dee2e6;
+        font-size: 1rem;
+        line-height: 1.5;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        outline: 0;
+    }
+
+    .form-label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: #212529;
+        font-size: 0.9rem;
+    }
+
+    input[type="number"] {
+        text-align: right;
+        -moz-appearance: textfield;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .card {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+
+    .card-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: all 0.15s ease-in-out;
+    }
+
+    .item-row {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .item-row:hover {
+        background-color: #f8f9fa;
+        border-radius: 0.25rem;
+    }
+
+    .remove-item {
+        padding: 0.5rem;
+        line-height: 1;
+    }
+
+    #totalPedido {
+        color: #198754;
+        font-weight: 600;
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const itemsList = document.getElementById('itemsList');
+    const addItemBtn = document.getElementById('addItem');
+    const totalPedido = document.getElementById('totalPedido');
+
+    function calcularSubtotal(row) {
+        const select = row.querySelector('select[name="items[]"]');
+        const cantidad = row.querySelector('input[name="cantidades[]"]');
+        const subtotalInput = row.querySelector('.subtotal');
+        
+        if (select.value && cantidad.value) {
+            const precio = parseFloat(select.options[select.selectedIndex].dataset.precio);
+            const subtotal = precio * parseInt(cantidad.value);
+            subtotalInput.value = `S/ ${subtotal.toFixed(2)}`;
+        } else {
+            subtotalInput.value = 'S/ 0.00';
+        }
+        
+        calcularTotal();
+    }
+
+    function calcularTotal() {
+        const subtotales = document.querySelectorAll('.subtotal');
+        let total = 0;
+        
+        subtotales.forEach(input => {
+            const valor = parseFloat(input.value.replace('S/ ', '')) || 0;
+            total += valor;
+        });
+        
+        totalPedido.textContent = `S/ ${total.toFixed(2)}`;
+    }
+
+    function addRowEventListeners(row) {
+        const select = row.querySelector('select[name="items[]"]');
+        const cantidad = row.querySelector('input[name="cantidades[]"]');
+        const removeBtn = row.querySelector('.remove-item');
+
+        select.addEventListener('change', () => calcularSubtotal(row));
+        cantidad.addEventListener('input', () => calcularSubtotal(row));
+        removeBtn.addEventListener('click', function() {
+            if (itemsList.children.length > 1) {
+                row.remove();
+                calcularTotal();
+            } else {
+                alert('Debe mantener al menos un item en el pedido.');
+            }
+        });
+    }
+
+    addItemBtn.addEventListener('click', function() {
+        const newRow = itemsList.children[0].cloneNode(true);
+        newRow.querySelectorAll('input').forEach(input => input.value = '');
+        newRow.querySelector('select').selectedIndex = 0;
+        newRow.querySelector('.subtotal').value = '';
+        itemsList.appendChild(newRow);
+        
+        addRowEventListeners(newRow);
+    });
+
+    // Inicializar listeners para la primera fila
+    addRowEventListeners(itemsList.children[0]);
+});
+</script>
+{% endblock %} 
