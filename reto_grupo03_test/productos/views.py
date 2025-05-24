@@ -4,6 +4,8 @@ from django.contrib import messages
 from .models import Articulo
 from core.forms import ArticuloForm
 
+
+
 # Create your views here.
 
 @login_required
@@ -18,7 +20,7 @@ def crear_articulo(request):
         if form.is_valid():
             articulo = form.save()
             messages.success(request, 'Artículo registrado exitosamente.')
-            return redirect('lista_articulos')
+            return redirect('productos:lista_articulos')
     else:
         form = ArticuloForm()
     return render(request, 'productos/crear_articulo.html', {'form': form})
@@ -31,7 +33,7 @@ def editar_articulo(request, articulo_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Artículo actualizado exitosamente.')
-            return redirect('lista_articulos')
+            return redirect('productos:lista_articulos')
     else:
         form = ArticuloForm(instance=articulo)
     return render(request, 'productos/editar_articulo.html', {'form': form})

@@ -29,6 +29,7 @@ class Promocion(models.Model):
     tipo_promocion = models.ForeignKey(TipoPromocion, on_delete=models.PROTECT)
     fecha_inicio = models.DateTimeField()
     fecha_fin = models.DateTimeField()
+    activo = models.BooleanField(default=True) 
     
     # Para promociones por volumen
     cantidad_minima = models.IntegerField(null=True, blank=True, validators=[MinValueValidator(1)])

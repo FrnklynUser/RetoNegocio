@@ -1,35 +1,46 @@
-# reto_grupo03/management/commands/import_data.py
-import pandas as pd
 from django.core.management.base import BaseCommand
-from core.models import Empresa, Grupo, LineaArticulo, Articulo, CanalCliente, Vendedor
+from core.models import Empresa, GrupoProveedor, LineaArticulo, CanalCliente, Vendedor
+import pandas as pd
 
 class Command(BaseCommand):
     help = 'Import data from Excel files'
 
     def handle(self, *args, **kwargs):
-        # Import Empresas (assuming a default empresa if not provided in Excel)
-        empresa, _ = Empresa.objects.get_or_create(nombre='Default Empresa')
+        # Import Empresas
+        empresa, _ = Empresa.objects.get_or_create(
+            codigo='EMP001',
+            defaults={
+                'nombre': 'Default Empresa',
+                'ruc': '12345678901',
+                'direccion': 'Default Address',
+                'email': 'default@empresa.com',
+                'telefono': '123456789',
+                'estado': True
+            }
+        )
 
-        # Import Grupos (from templeateimportGrupos.xlsx)
+        # Import Grupos
         try:
-            df_grupos = pd.read_excel('TemplateImportarGrupos.xlsx')
+            df_grupos = pd.read_excel('core/data/TemplateImportarGrupos.xlsx')  # Updated path
             for _, row in df_grupos.iterrows():
-                Grupo.objects.get_or_create(
+                GrupoProveedor.objects.get_or_create(
                     grupo_id=row['grupo_id'],
-                    empresa=empresa,
-                    codigo=row['codigo'],
-                    nombre=row['nombre'],
-                    estado=row['estado']
+                    defaults={
+                        'empresa': empresa,
+                        'codigo': row['codigo'],
+                        'nombre': row['nombre'],
+                        'estado': row['estado']
+                    }
                 )
             self.stdout.write(self.style.SUCCESS('Grupos imported successfully'))
         except Exception as e:
             self.stdout.write(self.style.ERROR(f'Error importing Grupos: {e}'))
 
-        # Import Lineas (from templateimportarlineas.xlsx)
+        # Import Lineas
         try:
-            df_lineas = pd.read_excel('TemplateImportarLineas.xlsx')
+            df_lineas = pd.read_excel('core/data/TemplateImportarLineas.xlsx')  # Updated path
             for _, row in df_lineas.iterrows():
-                grupo = Grupo.objects.get(grupo_id=row['grupo_id'])
+                grupo = GrupoProveedor.objects.get(grupo_id=row['grupo_id'])
                 LineaArticulo.objects.get_or_create(
                     linea_id=row['linea_id'],
                     empresa=empresa,
@@ -42,16 +53,13 @@ class Command(BaseCommand):
         except Exception as e:
             self.stdout.write(self.style.ERROR(f'Error importing Lineas: {e}'))
 
-        # Import Canales (assuming some default channels if not provided)
-        canal, _ = CanalCliente.objects.get_or_create(nombre='Default Canal')
-
-        # Import Articulos (from templateplantilla_articulos.xlsx)
+        # Import Articulos
         try:
-            df_articulos = pd.read_excel('template_articulos.xlsx')
+            df_articulos = pd.read_excel('core/data/template_articulos.xlsx')  # Updated path
             for _, row in df_articulos.iterrows():
-                grupo = Grupo.objects.get(grupo_id=row['grupo_id'])
+                grupo = GrupoProveedor.objects.get(grupo_id=row['grupo_id'])
                 linea = LineaArticulo.objects.get(linea_id=row['linea_id'])
-                Articulo.objects.get_or_create(
+                LineaArticulo.objects.get_or_create(
                     articulo_id=row['articulo_id'],
                     empresa=empresa,
                     codigo_articulo=row['codigo_articulo'],
@@ -72,21 +80,22 @@ class Command(BaseCommand):
                     tipo_producto=row['tipo_producto'],
                     afecto_retencion=row.get('afecto_retencion', False),
                     afecto_detraccion=row.get('afecto_detraccion', False),
-                    precio=row.get('precio', 0.00)  # Default price if not provided
+                    precio=row.get('precio', 0.00)
                 )
             self.stdout.write(self.style.SUCCESS('Articulos imported successfully'))
         except Exception as e:
             self.stdout.write(self.style.ERROR(f'Error importing Articulos: {e}'))
 
-        # Import Vendedores (from plantilla_vendedores.xlsx)
+        # Import Vendedores
         try:
-            df_vendedores = pd.read_excel('TemplateVendedores.xlsx')
+            df_vendedores = pd.read_excel('core/data/TemplateVendedores.xlsx')  # Updated path
+            canal, _ = CanalCliente.objects.get_or_create(nombre='Default Canal')
             for _, row in df_vendedores.iterrows():
                 Vendedor.objects.get_or_create(
                     tipo_identificacion=row['tipo_identificacion_id'],
                     nro_documento=row['nro_documento'],
                     nombres=row['nombres'],
-                    direccion=row.get('Direccion', None),
+                    direccion=row.get('direccion', None),
                     nro_movil=row.get('nro_movil', None),
                     canal=canal,
                     supervisor=row.get('supervisor', None),

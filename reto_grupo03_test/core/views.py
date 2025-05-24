@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.utils import timezone
 from decimal import Decimal
-from .models import Cliente, Pedido, PedidoItem
+from .models import Cliente, Pedido, PedidoItem, Empresa, Sucursal
 from productos.models import Articulo
 from promociones.models import Promocion
 from .forms import ClienteForm
@@ -194,3 +194,117 @@ def editar_cliente(request, cliente_id):
     else:
         form = ClienteForm(instance=cliente)
     return render(request, 'core/clientes/editar_cliente.html', {'form': form})
+
+# Empresa Views
+@login_required
+def lista_empresas(request):
+    empresas = Empresa.objects.filter(estado=True)
+    return render(request, 'core/empresas/empresa_list.html', {'empresas': empresas})
+
+@login_required
+def crear_empresa(request):
+    if request.method == 'POST':
+        codigo = request.POST.get('codigo')
+        nombre = request.POST.get('nombre')
+        ruc = request.POST.get('ruc')
+        direccion = request.POST.get('direccion')
+        telefono = request.POST.get('telefono')
+        email = request.POST.get('email')
+        
+        try:
+            empresa = Empresa.objects.create(
+                codigo=codigo,
+                nombre=nombre,
+                ruc=ruc,
+                direccion=direccion,
+                telefono=telefono,
+                email=email
+            )
+            messages.success(request, 'Empresa creada exitosamente.')
+            return redirect('core:lista_empresas')
+        except Exception as e:
+            messages.error(request, f'Error al crear la empresa: {str(e)}')
+    
+    return render(request, 'core/empresas/empresa_form.html')
+
+@login_required
+def editar_empresa(request, empresa_id):
+    empresa = get_object_or_404(Empresa, id=empresa_id)
+    
+    if request.method == 'POST':
+        empresa.codigo = request.POST.get('codigo')
+        empresa.nombre = request.POST.get('nombre')
+        empresa.ruc = request.POST.get('ruc')
+        empresa.direccion = request.POST.get('direccion')
+        empresa.telefono = request.POST.get('telefono')
+        empresa.email = request.POST.get('email')
+        
+        try:
+            empresa.save()
+            messages.success(request, 'Empresa actualizada exitosamente.')
+            return redirect('core:lista_empresas')
+        except Exception as e:
+            messages.error(request, f'Error al actualizar la empresa: {str(e)}')
+    
+    return render(request, 'core/empresas/empresa_form.html', {'empresa': empresa})
+
+# Sucursal Views
+@login_required
+def lista_sucursales(request):
+    sucursales = Sucursal.objects.filter(estado=True).select_related('empresa')
+    return render(request, 'core/sucursales/sucursal_list.html', {'sucursales': sucursales})
+
+@login_required
+def crear_sucursal(request):
+    empresas = Empresa.objects.filter(estado=True)
+    
+    if request.method == 'POST':
+        empresa_id = request.POST.get('empresa')
+        codigo = request.POST.get('codigo')
+        nombre = request.POST.get('nombre')
+        direccion = request.POST.get('direccion')
+        telefono = request.POST.get('telefono')
+        email = request.POST.get('email')
+        
+        try:
+            empresa = Empresa.objects.get(id=empresa_id)
+            sucursal = Sucursal.objects.create(
+                empresa=empresa,
+                codigo=codigo,
+                nombre=nombre,
+                direccion=direccion,
+                telefono=telefono,
+                email=email
+            )
+            messages.success(request, 'Sucursal creada exitosamente.')
+            return redirect('core:lista_sucursales')
+        except Exception as e:
+            messages.error(request, f'Error al crear la sucursal: {str(e)}')
+    
+    return render(request, 'core/sucursales/sucursal_form.html', {'empresas': empresas})
+
+@login_required
+def editar_sucursal(request, sucursal_id):
+    sucursal = get_object_or_404(Sucursal, id=sucursal_id)
+    empresas = Empresa.objects.filter(estado=True)
+    
+    if request.method == 'POST':
+        empresa_id = request.POST.get('empresa')
+        sucursal.empresa = Empresa.objects.get(id=empresa_id)
+        sucursal.codigo = request.POST.get('codigo')
+        sucursal.nombre = request.POST.get('nombre')
+        sucursal.direccion = request.POST.get('direccion')
+        sucursal.telefono = request.POST.get('telefono')
+        sucursal.email = request.POST.get('email')
+        
+        try:
+            sucursal.save()
+            messages.success(request, 'Sucursal actualizada exitosamente.')
+            return redirect('core:lista_sucursales')
+        except Exception as e:
+            messages.error(request, f'Error al actualizar la sucursal: {str(e)}')
+    
+    return render(request, 'core/sucursales/sucursal_form.html', {
+        'sucursal': sucursal,
+        'empresas': empresas
+    })

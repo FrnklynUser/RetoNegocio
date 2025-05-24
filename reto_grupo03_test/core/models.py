@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 # Master Catalog Models
 class Empresa(models.Model):
     codigo = models.CharField(max_length=20, unique=True)
@@ -69,11 +70,12 @@ class CondicionVenta(models.Model):
         verbose_name_plural = "Condiciones de Venta"
 
 class GrupoProveedor(models.Model):
-    codigo = models.CharField(max_length=20, unique=True)
+    grupo_id = models.CharField(max_length=36, primary_key=True)  # UUID field
+    empresa = models.ForeignKey('Empresa', on_delete=models.CASCADE)  # Link to Empresa
+    codigo = models.CharField(max_length=20)
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True, null=True)
-    estado = models.BooleanField(default=True)
-
+    estado = models.IntegerField(default=1)
     def __str__(self):
         return self.nombre
 
@@ -162,6 +164,7 @@ class Cliente(models.Model):
     estado = models.BooleanField(default=True)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
     fecha_actualizacion = models.DateTimeField(auto_now=True)
+
 
     def __str__(self):
         if self.nombre_comercial:
