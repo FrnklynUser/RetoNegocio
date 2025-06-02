@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "4587363d-8c4b-4250-b177-3a749ce99122",
+		"name": "Motor Promociones - Caso 4",
+		"description": "Colección para probar el Caso 4 del motor de promociones (descuentos escalonados por volumen en LECHE GLORIA T/PACK LIGHTx1lt)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38779341"
+	},
+	"item": [
+		{
+			"name": "Crear Empresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"EMPRESA4\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/empresas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"empresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Sucursal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Sucursal Principal\",\n  \"empresa\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sucursales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sucursales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Canal Cliente REGULAR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"REGULAR\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/canales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"canales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente REGULAR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Cliente Regular\",\n  \"canal\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/clientes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Línea Producto Lácteos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Lácteos\",\n  \"categoria\": \"Alimentos\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lineas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Producto GLO01",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"LECHE GLORIA T/PACK LIGHTx1lt.\",\n  \"codigo\": \"GLO01\",\n  \"marca\": \"GLORIA\",\n  \"linea\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Promoción Caso 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Descuento Escalonado Leche Gloria\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"descuento\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Condición Caso 4 (5 a 20 unidades, 2%)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad\",\n  \"valor_min\": 5,\n  \"valor_max\": 20,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/condiciones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"condiciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Beneficio Caso 4 (2%)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"porcentaje_descuento\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/beneficios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"beneficios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Condición Caso 4 (>20 unidades, 4%)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad\",\n  \"valor_min\": 21,\n  \"valor_max\": null,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/condiciones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"condiciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Beneficio Caso 4 (4%)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"porcentaje_descuento\": 4\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/beneficios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"beneficios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Caso 4 (10 unidades, espera 2%)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 10, \"precio_unitario\": 5.0 }\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Caso 4 (25 unidades, espera 4%)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 25, \"precio_unitario\": 5.0 }\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "fb3d3b8a-4270-4ec9-a812-1eb9383b8f0c",
+		"name": "Motor Promociones - Caso 3",
+		"description": "Colección para probar el Caso 3 del motor de promociones (descuento por volumen en ACEITE BELTRAN 1LT X12)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38779341"
+	},
+	"item": [
+		{
+			"name": "Crear Empresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"EMPRESA3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/empresas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"empresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Sucursal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Sucursal Principal\",\n  \"empresa\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sucursales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sucursales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Canal Cliente COBERTURA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"COBERTURA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/canales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"canales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente COBERTURA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Cliente Cobertura\",\n  \"canal\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/clientes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Línea Producto Aceites",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Aceites\",\n  \"categoria\": \"Alimentos\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lineas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Producto BEL001",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"ACEITE BELTRAN 1LT X12\",\n  \"codigo\": \"BEL001\",\n  \"marca\": \"BELTRAN\",\n  \"linea\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Promoción Caso 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Descuento Aceite BELTRAN x Volumen\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"descuento\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Condición Caso 3 (por cantidad, producto BEL001, descuento)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad\",\n  \"valor_min\": 61,\n  \"valor_max\": null,\n  \"producto\": 1,\n  \"linea_producto\": null,\n  \"bonificacion_descuento\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/condiciones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"condiciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Beneficio Caso 3 (descuento 5%)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"producto_bonificado\": null,\n  \"cantidad\": null,\n  \"porcentaje_descuento\": 5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/beneficios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"beneficios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Caso 3 (más de 60 unidades BEL001, cliente COBERTURA)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 61, \"precio_unitario\": 10.0 }\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
