@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "184c24aa-01dc-45a6-b1c6-b7f8fcd113e8",
+		"name": "Motor Promociones - Caso 13",
+		"description": "Colección para demostrar el caso 13: Descuento del 5% por compra combinada de pisco + gaseosa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38779341"
+	},
+	"item": [
+		{
+			"name": "1. Crear Empresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"EMPRESA13\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/empresas/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"empresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Crear Sucursal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Sucursal Principal\",\n  \"empresa\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sucursales/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sucursales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Crear Canal Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"REGULAR\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/canales/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"canales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Cliente Regular\",\n  \"canal\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/clientes/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Crear Línea de Producto Licores",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Licores\",\n  \"categoria\": \"Bebidas\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/lineas/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Crear Línea de Producto Gaseosas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Gaseosas\",\n  \"categoria\": \"Bebidas\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/lineas/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Crear Producto Pisco",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Pisco Quebranta\",\n  \"codigo\": \"PISCO001\",\n  \"marca\": \"PISCO PREMIUM\",\n  \"linea\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/productos/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. Crear Producto Gaseosa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Gaseosa Cola\",\n  \"codigo\": \"GAS001\",\n  \"marca\": \"REFRESCANTE\",\n  \"linea\": 2\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/productos/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Crear Promoción Caso 13",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Promo Pisco + Gaseosa\",\n  \"fecha_inicio\": \"2025-06-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"descuento\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/promociones/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. Crear Condición Compra Combinada",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"compra_combinada_productos\",\n  \"producto\": 1,\n  \"producto_secundario\": 2\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/condiciones/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"condiciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11. Crear Beneficio (5% descuento)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"porcentaje_descuento\": 5\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/beneficios/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"beneficios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12. Crear Pedido con Promo Combinada",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 2, \"precio_unitario\": 50.0 },\n    { \"producto\": 2, \"cantidad\": 3, \"precio_unitario\": 10.0 }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/pedidos/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000"
+		}
+	]
+}
