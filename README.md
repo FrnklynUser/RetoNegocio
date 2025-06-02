@@ -1,2 +1,2 @@
-# Bonificaiones Proyecto Grupo 03
+# Bonificaciones Proyecto Grupo 03
 Descripción breve del proyecto.
