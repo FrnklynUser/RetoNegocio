@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "b5d59e7c-59ac-4b3e-80c9-a5a0f3c8003c",
+		"name": "Motor Promociones - Caso 8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38779341"
+	},
+	"item": [
+		{
+			"name": "1. Crear Empresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Empresa Test Caso 8\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/empresas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"empresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Crear Canal Cliente Mayorista",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"MAYORISTA\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/canal-clientes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"canal-clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Crear Sucursal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"empresa\": 1, \"nombre\": \"Sucursal Principal\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sucursales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sucursales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Cliente Mayorista Test\", \"canal\": 1}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/clientes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Crear Línea Producto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Línea Test\", \"categoria\": \"Test\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lineas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Crear Producto AB",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Producto AB\", \"codigo\": \"AB001\", \"linea\": 1, \"marca\": \"MARCA TEST\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Crear Producto C",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Producto C\", \"codigo\": \"C001\", \"linea\": 1, \"marca\": \"MARCA TEST\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. Crear Promoción Escalonada con Adicional",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Promoción Escalonada AB+C\", \"fecha_inicio\": \"2025-01-01\", \"fecha_fin\": \"2025-12-31\", \"tipo_promocion\": \"escalonada_adicional\", \"empresa\": 1, \"sucursal\": 1, \"canal_cliente\": 1}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Crear Condición Promoción Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"promocion\": 1, \"tipo_condicion\": \"cantidad_escala\", \"producto\": 1, \"valor_min\": 36}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/condicion-promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"condicion-promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Crear Condición Promoción",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"promocion\": 1, \"tipo_condicion\": \"cantidad_escala\", \"producto\": 1, \"valor_min\": 36}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/condicion-promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"condicion-promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. Crear Beneficio Promoción AB+C Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"promocion\": 1, \"tipo_beneficio\": \"bonificacion\", \"producto_bonificado\": 1, \"producto_adicional\": 2, \"cantidad\": 9}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/beneficio-promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"beneficio-promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. Crear Beneficio Promoción AB+C",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"promocion\": 1, \"tipo_beneficio\": \"bonificacion\", \"producto_bonificado\": 1, \"producto_adicional\": 2, \"cantidad\": 9}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/beneficio-promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"beneficio-promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11. Crear Pedido (18 cajas - AB+C)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cliente\": 1, \"sucursal\": 1, \"detalles\": [{\"producto\": 1, \"cantidad\": 108, \"precio_unitario\": 10}]}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12. Crear Pedido (6 cajas - Solo AB)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cliente\": 1, \"sucursal\": 1, \"detalles\": [{\"producto\": 1, \"cantidad\": 36, \"precio_unitario\": 10}]}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
