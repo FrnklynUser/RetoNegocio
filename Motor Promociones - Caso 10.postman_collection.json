@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "b5dca2b2-ca7b-4f04-915a-2cf6eb7543be",
+		"name": "Motor Promociones - Caso 10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38779341"
+	},
+	"item": [
+		{
+			"name": "1. Crear Empresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"EMPRESA10\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/empresas/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"empresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Crear Sucursal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Sucursal Principal\",\n  \"empresa\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sucursales/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sucursales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Crear Canal Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"MAYORISTA\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/canales/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"canales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Cliente Caso 10\",\n  \"canal\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/clientes/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Crear Línea Producto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Línea M\",\n  \"categoria\": \"General\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/lineas/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Crear Producto M",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Producto M\",\n  \"codigo\": \"M001\",\n  \"marca\": \"MARCA M\",\n  \"linea\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/productos/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Crear Promoción Caso 10",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Bonificación por Escala de Importe Producto M\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"bonificacion\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/promociones/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. Crear Condición Escala 1 (S/5000-S/9999.99)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"importe_escala_bonificacion\",\n  \"valor_min\": 5000,\n  \"valor_max\": 9999.99,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/condiciones/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"condiciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Crear Condición Escala 2 (>=S/10000)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"importe_escala_bonificacion\",\n  \"valor_min\": 10000,\n  \"valor_max\": null,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/condiciones/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"condiciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. Crear Beneficio (Producto M)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"bonificacion\",\n  \"producto_bonificado\": 1,\n  \"cantidad\": 6\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/beneficios/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"beneficios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11. Pedido Caso 10 (S/7500 en Producto M, espera 1 caja)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 75, \"precio_unitario\": 100.0 }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/pedidos/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12. Pedido Caso 10 (S/12000 en Producto M, espera 3 cajas)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 120, \"precio_unitario\": 100.0 }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/pedidos/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000"
+		}
+	]
+}
