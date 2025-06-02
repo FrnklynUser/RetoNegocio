@@ -1,0 +1,285 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-03-14T12:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2024.1.0",
+  "resources": [
+    {
+      "_id": "req_canal",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/canales_cliente/",
+      "name": "Crear Canal Mayorista",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nombre\": \"MAYORISTA\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_cliente",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/clientes/",
+      "name": "Crear Cliente Mayorista",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nombre\": \"Cliente Mayorista\",\n  \"canal\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_empresa",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/empresas/",
+      "name": "Crear Empresa",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nombre\": \"EMPRESA TEST\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_sucursal",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/sucursales/",
+      "name": "Crear Sucursal",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nombre\": \"Sucursal Central\",\n  \"empresa\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_producto1",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/productos/",
+      "name": "Crear Producto 1",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nombre\": \"VINO BORGOÑA ABOCADO 750ML X12\",\n  \"codigo\": \"AC0353\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_producto2",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/productos/",
+      "name": "Crear Producto 2",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nombre\": \"VINO BORGOÑA x750ml-BONIF\",\n  \"codigo\": \"VO010B\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_promocion",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/promociones/",
+      "name": "Crear Promoción",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nombre\": \"Promo Vino Mayorista\",\n  \"fecha_inicio\": \"2024-01-01\",\n  \"fecha_fin\": \"2024-12-31\",\n  \"tipo_promocion\": \"bonificacion\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_condicion",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/condiciones_promocion/",
+      "name": "Crear Condición de Promoción",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad\",\n  \"valor_min\": 48,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_beneficio",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/beneficios_promocion/",
+      "name": "Crear Beneficio de Promoción",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"bonificacion\",\n  \"producto_bonificado\": 2,\n  \"cantidad\": 2\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "req_pedido",
+      "parentId": "wrk_caso1",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "url": "{{ _.base_url }}/api/pedidos/",
+      "name": "Crear Pedido",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    {\n      \"producto\": 1,\n      \"cantidad\": 48,\n      \"precio_unitario\": 10\n    }\n  ]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710417600000,
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_caso1",
+      "parentId": "wrk_root",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "name": "CASO 1 - Bonificación por volumen",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "wrk_root",
+      "parentId": null,
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "name": "Motor de Promociones",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_base",
+      "parentId": "wrk_root",
+      "modified": 1710417600000,
+      "created": 1710417600000,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:8000"
+      },
+      "dataPropertyOrder": {
+        "&": ["base_url"]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1710417600000,
+      "_type": "environment"
+    }
+  ]
+} 

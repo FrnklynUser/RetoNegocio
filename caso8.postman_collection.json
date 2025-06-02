@@ -1,0 +1,134 @@
+{
+  "info": {
+    "name": "Motor de Promociones - Caso 8",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Empresa",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/empresas/", "host": ["{{baseUrl}}"], "path": ["api", "empresas", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Empresa Demo\"\n}" }
+      }
+    },
+    {
+      "name": "Crear Canal Cliente",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/canales/", "host": ["{{baseUrl}}"], "path": ["api", "canales", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"MAYORISTA\"\n}" }
+      }
+    },
+    {
+      "name": "Crear Sucursal",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/sucursales/", "host": ["{{baseUrl}}"], "path": ["api", "sucursales", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Sucursal Central\",\n  \"empresa\": 1\n}" }
+      }
+    },
+    {
+      "name": "Crear Cliente",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/clientes/", "host": ["{{baseUrl}}"], "path": ["api", "clientes", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Cliente Mayorista\",\n  \"canal\": 1\n}" }
+      }
+    },
+    {
+      "name": "Crear Línea de Producto",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/lineas/", "host": ["{{baseUrl}}"], "path": ["api", "lineas", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Bebidas\"\n}" }
+      }
+    },
+    {
+      "name": "Crear Producto AB",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/productos/", "host": ["{{baseUrl}}"], "path": ["api", "productos", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"AB\",\n  \"linea\": 1\n}" }
+      }
+    },
+    {
+      "name": "Crear Producto C",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/productos/", "host": ["{{baseUrl}}"], "path": ["api", "productos", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"C\",\n  \"linea\": 1\n}" }
+      }
+    },
+    {
+      "name": "Crear Promoción Escalonada (Caso 8)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/promociones/", "host": ["{{baseUrl}}"], "path": ["api", "promociones", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Promo Escalonada AB + C\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1,\n  \"fecha_inicio\": \"2025-06-01\",\n  \"fecha_fin\": \"2025-12-31\"\n}" }
+      }
+    },
+    {
+      "name": "Crear Condición Escalonada (6 cajas AB)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/condiciones/", "host": ["{{baseUrl}}"], "path": ["api", "condiciones", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad_escala\",\n  \"producto\": 1,\n  \"valor_min\": 6,\n  \"valor_max\": 17\n}" }
+      }
+    },
+    {
+      "name": "Crear Condición Escalonada (18 cajas AB o más)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/condiciones/", "host": ["{{baseUrl}}"], "path": ["api", "condiciones", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad_escala\",\n  \"producto\": 1,\n  \"valor_min\": 18\n}" }
+      }
+    },
+    {
+      "name": "Crear Beneficio Bonificación AB (2 unidades, 6 cajas)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/beneficios/", "host": ["{{baseUrl}}"], "path": ["api", "beneficios", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"bonificacion\",\n  \"producto_bonificado\": 1,\n  \"cantidad\": 2\n}" }
+      }
+    },
+    {
+      "name": "Crear Beneficio Bonificación AB (9 unidades, 18 cajas o más)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/beneficios/", "host": ["{{baseUrl}}"], "path": ["api", "beneficios", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"bonificacion\",\n  \"producto_bonificado\": 1,\n  \"cantidad\": 9\n}" }
+      }
+    },
+    {
+      "name": "Crear Beneficio Bonificación C (2 unidades, solo para 18 cajas o más)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/beneficios/", "host": ["{{baseUrl}}"], "path": ["api", "beneficios", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"bonificacion\",\n  \"producto_bonificado\": 2,\n  \"cantidad\": 2\n}" }
+      }
+    },
+    {
+      "name": "Crear Pedido para probar promoción (caso 8)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/api/pedidos/", "host": ["{{baseUrl}}"], "path": ["api", "pedidos", ""] },
+        "body": { "mode": "raw", "raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 108, \"precio_unitario\": 10 }\n  ]\n}" }
+      }
+    }
+  ]
+}

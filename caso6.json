@@ -1,0 +1,59 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2025-05-30T00:00:00.000Z",
+    "__export_source": "insomnia.desktop.app:v2024.2.0",
+    "resources": [
+      { "_id": "wrk_caso6", "name": "Motor Promociones - Caso 6", "_type": "workspace" },
+      { "_id": "env_caso6", "parentId": "wrk_caso6", "_type": "environment", "name": "Base Environment", "data": { "base_url": "http://localhost:8000/api" } },
+  
+      { "_id": "req_empresa6", "parentId": "wrk_caso6", "_type": "request", "name": "Crear Empresa", "method": "POST", "url": "{{ base_url }}/empresas/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"EMPRESA6\"\n}" } },
+  
+      { "_id": "req_sucursal6", "parentId": "wrk_caso6", "_type": "request", "name": "Crear Sucursal", "method": "POST", "url": "{{ base_url }}/sucursales/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Sucursal Central\",\n  \"empresa\": 1\n}" } },
+  
+      { "_id": "req_canal6", "parentId": "wrk_caso6", "_type": "request", "name": "Crear Canal Cliente", "method": "POST", "url": "{{ base_url }}/canales/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"REGULAR\"\n}" } },
+  
+      { "_id": "req_cliente6", "parentId": "wrk_caso6", "_type": "request", "name": "Crear Cliente", "method": "POST", "url": "{{ base_url }}/clientes/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Cliente Caso 6\",\n  \"canal\": 1\n}" } },
+  
+      { "_id": "req_linea6", "parentId": "wrk_caso6", "_type": "request", "name": "Crear Línea Producto", "method": "POST", "url": "{{ base_url }}/lineas/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Línea C\",\n  \"categoria\": \"General\"\n}" } },
+  
+      { "_id": "req_producto_c", "parentId": "wrk_caso6", "_type": "request", "name": "Crear Producto C", "method": "POST", "url": "{{ base_url }}/productos/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Producto C\",\n  \"codigo\": \"C\",\n  \"marca\": \"MARCA C\",\n  \"linea\": 1\n}" } },
+  
+      {
+        "_id": "req_pedido_caso6_1",
+        "parentId": "wrk_caso6",
+        "_type": "request",
+        "name": "Pedido Caso 6 (S/600 en Producto C, espera 2%)",
+        "method": "POST",
+        "url": "{{ base_url }}/pedidos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 60, \"precio_unitario\": 10.0 }\n  ]\n}"
+        }
+      },
+      {
+        "_id": "req_pedido_caso6_2",
+        "parentId": "wrk_caso6",
+        "_type": "request",
+        "name": "Pedido Caso 6 (S/2000 en Producto C, espera 4%)",
+        "method": "POST",
+        "url": "{{ base_url }}/pedidos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 200, \"precio_unitario\": 10.0 }\n  ]\n}"
+        }
+      },
+      {
+        "_id": "req_pedido_caso6_3",
+        "parentId": "wrk_caso6",
+        "_type": "request",
+        "name": "Pedido Caso 6 (S/5000 en Producto C, espera 5%)",
+        "method": "POST",
+        "url": "{{ base_url }}/pedidos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 500, \"precio_unitario\": 10.0 }\n  ]\n}"
+        }
+      }
+    ]
+  }

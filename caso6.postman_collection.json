@@ -1,0 +1,233 @@
+{
+  "info": {
+    "_postman_id": "caso6-coleccion-id",
+    "name": "Motor Promociones - Caso 6",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Empresa",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"EMPRESA6\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/empresas/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "empresas", ""] }
+      }
+    },
+    {
+      "name": "Crear Sucursal",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Sucursal Central\",\n  \"empresa\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/sucursales/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "sucursales", ""] }
+      }
+    },
+    {
+      "name": "Crear Canal Cliente REGULAR",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"REGULAR\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/canales/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "canales", ""] }
+      }
+    },
+    {
+      "name": "Crear Cliente Caso 6",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Cliente Caso 6\",\n  \"canal\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/clientes/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "clientes", ""] }
+      }
+    },
+    {
+      "name": "Crear Línea Producto C",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Línea C\",\n  \"categoria\": \"General\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/lineas/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "lineas", ""] }
+      }
+    },
+    {
+      "name": "Crear Producto C",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Producto C\",\n  \"codigo\": \"C\",\n  \"marca\": \"MARCA C\",\n  \"linea\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/productos/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "productos", ""] }
+      }
+    },
+    {
+      "name": "Crear Promoción Caso 6",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Descuento Producto C Escalas\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"descuento\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/promociones/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "promociones", ""] }
+      }
+    },
+    {
+      "name": "Condición Escala 1 (S/500 a S/1499, 2%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"importe\",\n  \"valor_min\": 500,\n  \"valor_max\": 1499,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/condiciones/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "condiciones", ""] }
+      }
+    },
+    {
+      "name": "Condición Escala 2 (S/1500 a S/4000, 4%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"importe\",\n  \"valor_min\": 1500,\n  \"valor_max\": 4000,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/condiciones/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "condiciones", ""] }
+      }
+    },
+    {
+      "name": "Condición Escala 3 (>S/4000, 5%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"importe\",\n  \"valor_min\": 4001,\n  \"valor_max\": null,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/condiciones/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "condiciones", ""] }
+      }
+    },
+    {
+      "name": "Beneficio Escala 1 (2%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"producto_bonificado\": null,\n  \"cantidad\": null,\n  \"porcentaje_descuento\": 2\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/beneficios/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "beneficios", ""] }
+      }
+    },
+    {
+      "name": "Beneficio Escala 2 (4%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"producto_bonificado\": null,\n  \"cantidad\": null,\n  \"porcentaje_descuento\": 4\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/beneficios/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "beneficios", ""] }
+      }
+    },
+    {
+      "name": "Beneficio Escala 3 (5%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"producto_bonificado\": null,\n  \"cantidad\": null,\n  \"porcentaje_descuento\": 5\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/beneficios/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "beneficios", ""] }
+      }
+    },
+    {
+      "name": "Pedido Caso 6 (S/600 en Producto C, espera 2%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 60, \"precio_unitario\": 10.0 }\n  ]\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/pedidos/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "pedidos", ""] }
+      }
+    },
+    {
+      "name": "Pedido Caso 6 (S/2000 en Producto C, espera 4%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 200, \"precio_unitario\": 10.0 }\n  ]\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/pedidos/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "pedidos", ""] }
+      }
+    },
+    {
+      "name": "Pedido Caso 6 (S/5000 en Producto C, espera 5%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 500, \"precio_unitario\": 10.0 }\n  ]\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/pedidos/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "pedidos", ""] }
+      }
+    }
+  ]
+}

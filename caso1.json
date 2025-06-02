@@ -1,0 +1,154 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2025-05-30T00:00:00.000Z",
+    "__export_source": "insomnia.desktop.app:v2024.2.0",
+    "resources": [
+      {
+        "_id": "wrk_caso1",
+        "name": "Motor Promociones - Caso 1",
+        "_type": "workspace"
+      },
+      {
+        "_id": "env_caso1",
+        "parentId": "wrk_caso1",
+        "_type": "environment",
+        "name": "Base Environment",
+        "data": {
+          "base_url": "http://localhost:8000/api"
+        }
+      },
+      {
+        "_id": "req_empresa1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Empresa",
+        "method": "POST",
+        "url": "{{ base_url }}/empresas/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"EMPRESA1\"\n}"
+        }
+      },
+      {
+        "_id": "req_sucursal1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Sucursal",
+        "method": "POST",
+        "url": "{{ base_url }}/sucursales/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Sucursal Lima\",\n  \"empresa\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_canal1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Canal Cliente",
+        "method": "POST",
+        "url": "{{ base_url }}/canales/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"MAYORISTA\"\n}"
+        }
+      },
+      {
+        "_id": "req_cliente1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Cliente",
+        "method": "POST",
+        "url": "{{ base_url }}/clientes/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Cliente Mayorista\",\n  \"canal\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_linea_vino1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Línea Producto Vinos",
+        "method": "POST",
+        "url": "{{ base_url }}/lineas/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Vinos\",\n  \"categoria\": \"Bebidas\"\n}"
+        }
+      },
+      {
+        "_id": "req_producto_vino1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Producto Vino",
+        "method": "POST",
+        "url": "{{ base_url }}/productos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"VINO BORGOÑA ABOCADO 750ML X12\",\n  \"codigo\": \"AC0353\",\n  \"marca\": \"BORGOÑA\",\n  \"linea\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_producto_vino_bonif1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Producto Vino Bonificado",
+        "method": "POST",
+        "url": "{{ base_url }}/productos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"VINO BORGOÑA x750ml-BONIF\",\n  \"codigo\": \"VO010B\",\n  \"marca\": \"BORGOÑA\",\n  \"linea\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_promocion1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Promoción Caso 1",
+        "method": "POST",
+        "url": "{{ base_url }}/promociones/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Promo Vino x Volumen\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"bonificacion\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_condicion1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Condición Caso 1",
+        "method": "POST",
+        "url": "{{ base_url }}/condiciones/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad\",\n  \"valor_min\": 48,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+        }
+      },
+      {
+        "_id": "req_beneficio1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Crear Beneficio Caso 1",
+        "method": "POST",
+        "url": "{{ base_url }}/beneficios/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"bonificacion\",\n  \"producto_bonificado\": 2,\n  \"cantidad\": 2\n}"
+        }
+      },
+      {
+        "_id": "req_pedido_caso1",
+        "parentId": "wrk_caso1",
+        "_type": "request",
+        "name": "Pedido Caso 1 (Vino x Volumen)",
+        "method": "POST",
+        "url": "{{ base_url }}/pedidos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 48, \"precio_unitario\": 10.0 }\n  ]\n}"
+        }
+      }
+    ]
+  }

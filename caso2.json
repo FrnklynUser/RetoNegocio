@@ -1,0 +1,154 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2025-05-30T00:00:00.000Z",
+    "__export_source": "insomnia.desktop.app:v2024.2.0",
+    "resources": [
+      {
+        "_id": "wrk_caso2",
+        "name": "Motor Promociones - Caso 2",
+        "_type": "workspace"
+      },
+      {
+        "_id": "env_caso2",
+        "parentId": "wrk_caso2",
+        "_type": "environment",
+        "name": "Base Environment",
+        "data": {
+          "base_url": "http://localhost:8000/api"
+        }
+      },
+      {
+        "_id": "req_empresa2",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Empresa",
+        "method": "POST",
+        "url": "{{ base_url }}/empresas/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"EMPRESA2\"\n}"
+        }
+      },
+      {
+        "_id": "req_sucursal2",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Sucursal",
+        "method": "POST",
+        "url": "{{ base_url }}/sucursales/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Sucursal Central\",\n  \"empresa\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_canal2",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Canal Cliente MAYORISTA",
+        "method": "POST",
+        "url": "{{ base_url }}/canales/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"MAYORISTA\"\n}"
+        }
+      },
+      {
+        "_id": "req_cliente2",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Cliente Mayorista",
+        "method": "POST",
+        "url": "{{ base_url }}/clientes/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Cliente Mayorista\",\n  \"canal\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_linea_detergente",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Línea Producto Detergentes",
+        "method": "POST",
+        "url": "{{ base_url }}/lineas/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Detergentes\",\n  \"categoria\": \"Limpieza\"\n}"
+        }
+      },
+      {
+        "_id": "req_producto_400051B",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Producto 400051B",
+        "method": "POST",
+        "url": "{{ base_url }}/productos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"DETERGENTE BOLIVAR MATIC 350 GR\",\n  \"codigo\": \"400051B\",\n  \"marca\": \"BOLÍVAR\",\n  \"linea\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_producto_400536B",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Producto 400536B",
+        "method": "POST",
+        "url": "{{ base_url }}/productos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"DETERGENTE BOLIVAR AROM/SUAVIDAD 750 GR\",\n  \"codigo\": \"400536B\",\n  \"marca\": \"BOLÍVAR\",\n  \"linea\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_producto_venta",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Producto de Venta Detergente BOLÍVAR",
+        "method": "POST",
+        "url": "{{ base_url }}/productos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"DETERGENTE BOLIVAR REGULAR 1KG\",\n  \"codigo\": \"400100B\",\n  \"marca\": \"BOLÍVAR\",\n  \"linea\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_promocion2",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Promoción Caso 2",
+        "method": "POST",
+        "url": "{{ base_url }}/promociones/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"nombre\": \"Promo Detergente x Importe\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"bonificacion\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+        }
+      },
+      {
+        "_id": "req_condicion2",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Crear Condición Caso 2 (por importe, línea y marca)",
+        "method": "POST",
+        "url": "{{ base_url }}/condiciones/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"importe\",\n  \"valor_min\": 100,\n  \"linea_producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+        }
+      },
+      {
+        "_id": "req_pedido_caso2",
+        "parentId": "wrk_caso2",
+        "_type": "request",
+        "name": "Pedido Caso 2 (Detergente x Importe)",
+        "method": "POST",
+        "url": "{{ base_url }}/pedidos/",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 3, \"cantidad\": 10, \"precio_unitario\": 10.0 }\n  ]\n}"
+        }
+      }
+    ]
+  }

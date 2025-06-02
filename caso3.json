@@ -1,0 +1,21 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2025-05-30T00:00:00.000Z",
+    "__export_source": "insomnia.desktop.app:v2024.2.0",
+    "resources": [
+      { "_id": "wrk_caso3", "name": "Motor Promociones - Caso 3", "_type": "workspace" },
+      { "_id": "env_caso3", "parentId": "wrk_caso3", "_type": "environment", "name": "Base Environment", "data": { "base_url": "http://localhost:8000/api" } },
+      { "_id": "req_empresa3", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Empresa", "method": "POST", "url": "{{ base_url }}/empresas/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"EMPRESA3\"\n}" } },
+      { "_id": "req_sucursal3", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Sucursal", "method": "POST", "url": "{{ base_url }}/sucursales/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Sucursal Principal\",\n  \"empresa\": 1\n}" } },
+      { "_id": "req_canal_cobertura", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Canal Cliente COBERTURA", "method": "POST", "url": "{{ base_url }}/canales/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"COBERTURA\"\n}" } },
+      { "_id": "req_cliente_cobertura", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Cliente COBERTURA", "method": "POST", "url": "{{ base_url }}/clientes/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Cliente Cobertura\",\n  \"canal\": 1\n}" } },
+      { "_id": "req_linea_aceite", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Línea Producto Aceites", "method": "POST", "url": "{{ base_url }}/lineas/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Aceites\",\n  \"categoria\": \"Alimentos\"\n}" } },
+      { "_id": "req_producto_bel001", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Producto ACEITE BELTRAN 1LT X12 (BEL001)", "method": "POST", "url": "{{ base_url }}/productos/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"ACEITE BELTRAN 1LT X12\",\n  \"codigo\": \"BEL001\",\n  \"marca\": \"BELTRAN\",\n  \"linea\": 1\n}" } },
+      { "_id": "req_promocion3", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Promoción Caso 3", "method": "POST", "url": "{{ base_url }}/promociones/", "body": { "mimeType": "application/json", "text": "{\n  \"nombre\": \"Descuento Aceite BELTRAN x Volumen\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"descuento\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}" } },
+      { "_id": "req_condicion3", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Condición Caso 3 (por cantidad, producto BEL001, descuento)", "method": "POST", "url": "{{ base_url }}/condiciones/", "body": { "mimeType": "application/json", "text": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad\",\n  \"valor_min\": 61,\n  \"valor_max\": null,\n  \"producto\": 1,\n  \"linea_producto\": null,\n  \"bonificacion_descuento\": true\n}" } },
+      { "_id": "req_beneficio3", "parentId": "wrk_caso3", "_type": "request", "name": "Crear Beneficio Caso 3 (descuento 5%)", "method": "POST", "url": "{{ base_url }}/beneficios/", "body": { "mimeType": "application/json", "text": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"producto_bonificado\": null,\n  \"cantidad\": null,\n  \"porcentaje_descuento\": 5\n}" } },
+      { "_id": "req_pedido_caso3", "parentId": "wrk_caso3", "_type": "request", "name": "Pedido Caso 3 (más de 60 unidades BEL001, cliente COBERTURA)", "method": "POST", "url": "{{ base_url }}/pedidos/", "body": { "mimeType": "application/json", "text": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 61, \"precio_unitario\": 10.0 }\n  ]\n}" } }
+    ]
+  }
+  

@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890",
+		"name": "Caso 5 - Descuento por Monto en Salsas/Sillao",
+		"description": "Colección para demostrar el caso 5: Descuento del 5% por compra de S/300 en productos de la línea SALSAS/SILLAO para clientes MAYORISTAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Crear Empresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Mi Empresa\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/empresas/",
+					"host": ["{{base_url}}"],
+					"path": ["api", "empresas", ""]
+				}
+			}
+		},
+		{
+			"name": "2. Crear Canal Cliente (Mayorista)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"MAYORISTA\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/canales-cliente/",
+					"host": ["{{base_url}}"],
+					"path": ["api", "canales-cliente", ""]
+				}
+			}
+		},
+		{
+			"name": "3. Crear Cliente Mayorista",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Cliente Mayorista 1\",\n    \"canal\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/clientes/",
+					"host": ["{{base_url}}"],
+					"path": ["api", "clientes", ""]
+				}
+			}
+		},
+		{
+			"name": "4. Crear Línea de Producto (Salsas/Sillao)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"SALSAS/SILLAO\",\n    \"categoria\": \"Condimentos\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/lineas-producto/",
+					"host": ["{{base_url}}"],
+					"path": ["api", "lineas-producto", ""]
+				}
+			}
+		},
+		{
+			"name": "5. Crear Productos de la Línea",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigo\": \"SAL001\",\n    \"nombre\": \"Salsa de Tomate\",\n    \"precio\": 15.00,\n    \"linea_producto\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/productos/",
+					"host": ["{{base_url}}"],
+					"path": ["api", "productos", ""]
+				}
+			}
+		},
+		{
+			"name": "6. Crear Promoción",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Descuento 5% en Salsas/Sillao\",\n    \"fecha_inicio\": \"2024-03-20\",\n    \"fecha_fin\": \"2024-12-31\",\n    \"activa\": true,\n    \"condiciones\": [\n        {\n            \"tipo_condicion\": \"MONTO_LINEA\",\n            \"valor_min\": 300.00,\n            \"linea_producto\": 1,\n            \"canal_cliente\": 1,\n            \"bonificacion_descuento\": true\n        }\n    ],\n    \"beneficios\": [\n        {\n            \"tipo_beneficio\": \"DESCUENTO_PORCENTAJE\",\n            \"porcentaje_descuento\": 5.00\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/promociones/",
+					"host": ["{{base_url}}"],
+					"path": ["api", "promociones", ""]
+				}
+			}
+		},
+		{
+			"name": "7. Crear Pedido con Descuento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cliente\": 1,\n    \"fecha\": \"2024-03-20\",\n    \"detalles\": [\n        {\n            \"producto\": 1,\n            \"cantidad\": 20,\n            \"precio_unitario\": 15.00\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/pedidos/",
+					"host": ["{{base_url}}"],
+					"path": ["api", "pedidos", ""]
+				}
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000"
+		}
+	]
+} 

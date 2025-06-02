@@ -1,0 +1,1476 @@
+[
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocion",
+        "importPath": "api.models.beneficio_promocion",
+        "description": "api.models.beneficio_promocion",
+        "isExtraImport": true,
+        "detail": "api.models.beneficio_promocion",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocion",
+        "importPath": "api.models.beneficio_promocion",
+        "description": "api.models.beneficio_promocion",
+        "isExtraImport": true,
+        "detail": "api.models.beneficio_promocion",
+        "documentation": {}
+    },
+    {
+        "label": "CanalCliente",
+        "importPath": "api.models.canal_cliente",
+        "description": "api.models.canal_cliente",
+        "isExtraImport": true,
+        "detail": "api.models.canal_cliente",
+        "documentation": {}
+    },
+    {
+        "label": "CanalCliente",
+        "importPath": "api.models.canal_cliente",
+        "description": "api.models.canal_cliente",
+        "isExtraImport": true,
+        "detail": "api.models.canal_cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "importPath": "api.models.cliente",
+        "description": "api.models.cliente",
+        "isExtraImport": true,
+        "detail": "api.models.cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "importPath": "api.models.cliente",
+        "description": "api.models.cliente",
+        "isExtraImport": true,
+        "detail": "api.models.cliente",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocion",
+        "importPath": "api.models.condicion_promocion",
+        "description": "api.models.condicion_promocion",
+        "isExtraImport": true,
+        "detail": "api.models.condicion_promocion",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocion",
+        "importPath": "api.models.condicion_promocion",
+        "description": "api.models.condicion_promocion",
+        "isExtraImport": true,
+        "detail": "api.models.condicion_promocion",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "api.models.empresa",
+        "description": "api.models.empresa",
+        "isExtraImport": true,
+        "detail": "api.models.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "api.models.empresa",
+        "description": "api.models.empresa",
+        "isExtraImport": true,
+        "detail": "api.models.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProducto",
+        "importPath": "api.models.linea_producto",
+        "description": "api.models.linea_producto",
+        "isExtraImport": true,
+        "detail": "api.models.linea_producto",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProducto",
+        "importPath": "api.models.linea_producto",
+        "description": "api.models.linea_producto",
+        "isExtraImport": true,
+        "detail": "api.models.linea_producto",
+        "documentation": {}
+    },
+    {
+        "label": "Pedido",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoDetalle",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionAplicada",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocion",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocion",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProducto",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Pedido",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoDetalle",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sucursal",
+        "importPath": "api.models",
+        "description": "api.models",
+        "isExtraImport": true,
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "api.models.producto",
+        "description": "api.models.producto",
+        "isExtraImport": true,
+        "detail": "api.models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "api.models.producto",
+        "description": "api.models.producto",
+        "isExtraImport": true,
+        "detail": "api.models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "importPath": "api.models.promocion",
+        "description": "api.models.promocion",
+        "isExtraImport": true,
+        "detail": "api.models.promocion",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "importPath": "api.models.promocion",
+        "description": "api.models.promocion",
+        "isExtraImport": true,
+        "detail": "api.models.promocion",
+        "documentation": {}
+    },
+    {
+        "label": "Sucursal",
+        "importPath": "api.models.sucursal",
+        "description": "api.models.sucursal",
+        "isExtraImport": true,
+        "detail": "api.models.sucursal",
+        "documentation": {}
+    },
+    {
+        "label": "Sucursal",
+        "importPath": "api.models.sucursal",
+        "description": "api.models.sucursal",
+        "isExtraImport": true,
+        "detail": "api.models.sucursal",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocionSerializer",
+        "importPath": "api.serializers.beneficio_promocion_serializer",
+        "description": "api.serializers.beneficio_promocion_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.beneficio_promocion_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "CanalClienteSerializer",
+        "importPath": "api.serializers.canal_cliente_serializer",
+        "description": "api.serializers.canal_cliente_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.canal_cliente_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteSerializer",
+        "importPath": "api.serializers.cliente_serializer",
+        "description": "api.serializers.cliente_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.cliente_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocionSerializer",
+        "importPath": "api.serializers.condicion_promocion_serializer",
+        "description": "api.serializers.condicion_promocion_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.condicion_promocion_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaSerializer",
+        "importPath": "api.serializers.empresa_serializer",
+        "description": "api.serializers.empresa_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.empresa_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProductoSerializer",
+        "importPath": "api.serializers.linea_producto_serializer",
+        "description": "api.serializers.linea_producto_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.linea_producto_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "action",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectDoesNotExist",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionEngine",
+        "importPath": "api.services.promocion_engine",
+        "description": "api.services.promocion_engine",
+        "isExtraImport": true,
+        "detail": "api.services.promocion_engine",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoSerializer",
+        "importPath": "api.serializers.producto_serializer",
+        "description": "api.serializers.producto_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.producto_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionSerializer",
+        "importPath": "api.serializers.promocion_serializer",
+        "description": "api.serializers.promocion_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.promocion_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "SucursalSerializer",
+        "importPath": "api.serializers.sucursal_serializer",
+        "description": "api.serializers.sucursal_serializer",
+        "isExtraImport": true,
+        "detail": "api.serializers.sucursal_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaViewSet",
+        "importPath": "api.views.empresa_view",
+        "description": "api.views.empresa_view",
+        "isExtraImport": true,
+        "detail": "api.views.empresa_view",
+        "documentation": {}
+    },
+    {
+        "label": "SucursalViewSet",
+        "importPath": "api.views.sucursal_view",
+        "description": "api.views.sucursal_view",
+        "isExtraImport": true,
+        "detail": "api.views.sucursal_view",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoViewSet",
+        "importPath": "api.views.pedido_view",
+        "description": "api.views.pedido_view",
+        "isExtraImport": true,
+        "detail": "api.views.pedido_view",
+        "documentation": {}
+    },
+    {
+        "label": "CanalClienteViewSet",
+        "importPath": "api.views.canal_cliente_view",
+        "description": "api.views.canal_cliente_view",
+        "isExtraImport": true,
+        "detail": "api.views.canal_cliente_view",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteViewSet",
+        "importPath": "api.views.cliente_view",
+        "description": "api.views.cliente_view",
+        "isExtraImport": true,
+        "detail": "api.views.cliente_view",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProductoViewSet",
+        "importPath": "api.views.linea_producto_view",
+        "description": "api.views.linea_producto_view",
+        "isExtraImport": true,
+        "detail": "api.views.linea_producto_view",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoViewSet",
+        "importPath": "api.views.producto_view",
+        "description": "api.views.producto_view",
+        "isExtraImport": true,
+        "detail": "api.views.producto_view",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionViewSet",
+        "importPath": "api.views.promocion_view",
+        "description": "api.views.promocion_view",
+        "isExtraImport": true,
+        "detail": "api.views.promocion_view",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocionViewSet",
+        "importPath": "api.views.condicion_promocion_view",
+        "description": "api.views.condicion_promocion_view",
+        "isExtraImport": true,
+        "detail": "api.views.condicion_promocion_view",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocionViewSet",
+        "importPath": "api.views.beneficio_promocion_view",
+        "description": "api.views.beneficio_promocion_view",
+        "isExtraImport": true,
+        "detail": "api.views.beneficio_promocion_view",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "api.routers",
+        "description": "api.routers",
+        "isExtraImport": true,
+        "detail": "api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0001_initial",
+        "description": "api.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CanalCliente',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('nombre', models.CharField(max_length=100)),",
+        "detail": "api.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0002_pedido_sucursal",
+        "description": "api.migrations.0002_pedido_sucursal",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='pedido',\n            name='sucursal',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='pedidos', to='api.sucursal'),\n        ),",
+        "detail": "api.migrations.0002_pedido_sucursal",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0003_condicionpromocion_canal_cliente",
+        "description": "api.migrations.0003_condicionpromocion_canal_cliente",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0002_pedido_sucursal'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='condicionpromocion',\n            name='canal_cliente',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='condiciones', to='api.canalcliente'),\n        ),",
+        "detail": "api.migrations.0003_condicionpromocion_canal_cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0004_promocion_producto_adicional",
+        "description": "api.migrations.0004_promocion_producto_adicional",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('api', '0003_condicionpromocion_canal_cliente'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='promocion',\n            name='producto_adicional',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='promociones_adicionales', to='api.producto'),\n        ),",
+        "detail": "api.migrations.0004_promocion_producto_adicional",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocion",
+        "kind": 6,
+        "importPath": "api.models.beneficio_promocion",
+        "description": "api.models.beneficio_promocion",
+        "peekOfCode": "class BeneficioPromocion(models.Model):\n    promocion = models.ForeignKey(Promocion, on_delete=models.CASCADE, related_name='beneficios')\n    tipo_beneficio = models.CharField(max_length=50)\n    producto_bonificado = models.ForeignKey(Producto, on_delete=models.SET_NULL, null=True, blank=True, related_name='beneficios')\n    cantidad = models.IntegerField(null=True, blank=True)\n    porcentaje_descuento = models.FloatField(null=True, blank=True)\n    class Meta:\n        db_table = 'beneficio_promocion'",
+        "detail": "api.models.beneficio_promocion",
+        "documentation": {}
+    },
+    {
+        "label": "CanalCliente",
+        "kind": 6,
+        "importPath": "api.models.canal_cliente",
+        "description": "api.models.canal_cliente",
+        "peekOfCode": "class CanalCliente(models.Model):\n    nombre = models.CharField(max_length=100)\n    class Meta:\n        db_table = 'canal_cliente'",
+        "detail": "api.models.canal_cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "kind": 6,
+        "importPath": "api.models.cliente",
+        "description": "api.models.cliente",
+        "peekOfCode": "class Cliente(models.Model):\n    nombre = models.CharField(max_length=255)\n    canal = models.ForeignKey(CanalCliente, on_delete=models.CASCADE, related_name='clientes')\n    class Meta:\n        db_table = 'cliente'",
+        "detail": "api.models.cliente",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocion",
+        "kind": 6,
+        "importPath": "api.models.condicion_promocion",
+        "description": "api.models.condicion_promocion",
+        "peekOfCode": "class CondicionPromocion(models.Model):\n    promocion = models.ForeignKey(Promocion, on_delete=models.CASCADE, related_name='condiciones')\n    tipo_condicion = models.CharField(max_length=50)\n    valor_min = models.FloatField()\n    valor_max = models.FloatField(null=True, blank=True)\n    producto = models.ForeignKey(Producto, on_delete=models.SET_NULL, null=True, blank=True, related_name='condiciones')\n    linea_producto = models.ForeignKey(LineaProducto, on_delete=models.SET_NULL, null=True, blank=True, related_name='condiciones')\n    canal_cliente = models.ForeignKey(CanalCliente, on_delete=models.SET_NULL, null=True, blank=True, related_name='condiciones')\n    bonificacion_descuento = models.BooleanField()\n    class Meta:",
+        "detail": "api.models.condicion_promocion",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "kind": 6,
+        "importPath": "api.models.empresa",
+        "description": "api.models.empresa",
+        "peekOfCode": "class Empresa(models.Model):\n    nombre = models.CharField(max_length=255)\n    class Meta:\n        db_table = 'empresa'",
+        "detail": "api.models.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProducto",
+        "kind": 6,
+        "importPath": "api.models.linea_producto",
+        "description": "api.models.linea_producto",
+        "peekOfCode": "class LineaProducto(models.Model):\n    nombre = models.CharField(max_length=255)\n    categoria = models.CharField(max_length=255)\n    class Meta:\n        db_table = 'linea_producto'",
+        "detail": "api.models.linea_producto",
+        "documentation": {}
+    },
+    {
+        "label": "Pedido",
+        "kind": 6,
+        "importPath": "api.models.pedido",
+        "description": "api.models.pedido",
+        "peekOfCode": "class Pedido(models.Model):\n    cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE, related_name='pedidos')\n    sucursal = models.ForeignKey(Sucursal, on_delete=models.CASCADE, related_name='pedidos', null=True, blank=True)  # <--- CAMBIO AQUÍ\n    fecha = models.DateTimeField(auto_now_add=True)\n    total_monto = models.FloatField()\n    class Meta:\n        db_table = 'pedido'",
+        "detail": "api.models.pedido",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoDetalle",
+        "kind": 6,
+        "importPath": "api.models.pedido_detalle",
+        "description": "api.models.pedido_detalle",
+        "peekOfCode": "class PedidoDetalle(models.Model):\n    pedido = models.ForeignKey(Pedido, on_delete=models.CASCADE, related_name='detalles')\n    producto = models.ForeignKey(Producto, on_delete=models.CASCADE, related_name='detalles')\n    cantidad = models.IntegerField()\n    precio_unitario = models.FloatField()\n    class Meta:\n        db_table = 'pedido_detalle'",
+        "detail": "api.models.pedido_detalle",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "kind": 6,
+        "importPath": "api.models.producto",
+        "description": "api.models.producto",
+        "peekOfCode": "class Producto(models.Model):\n    nombre = models.CharField(max_length=255)\n    codigo = models.CharField(max_length=100)\n    marca = models.CharField(max_length=100)\n    linea = models.ForeignKey(LineaProducto, on_delete=models.CASCADE, related_name='productos')\n    class Meta:\n        db_table = 'producto'",
+        "detail": "api.models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Promocion",
+        "kind": 6,
+        "importPath": "api.models.promocion",
+        "description": "api.models.promocion",
+        "peekOfCode": "class Promocion(models.Model):\n    nombre = models.CharField(max_length=255)\n    fecha_inicio = models.DateField()\n    fecha_fin = models.DateField()\n    tipo_promocion = models.CharField(max_length=50)\n    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE, related_name='promociones')\n    sucursal = models.ForeignKey(Sucursal, on_delete=models.CASCADE, related_name='promociones')\n    canal_cliente = models.ForeignKey(CanalCliente, on_delete=models.CASCADE, related_name='promociones')\n    producto_adicional = models.ForeignKey(Producto, on_delete=models.SET_NULL, null=True, blank=True, related_name='promociones_adicionales')\n    class Meta:",
+        "detail": "api.models.promocion",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionAplicada",
+        "kind": 6,
+        "importPath": "api.models.promocion_aplicada",
+        "description": "api.models.promocion_aplicada",
+        "peekOfCode": "class PromocionAplicada(models.Model):\n    pedido = models.ForeignKey(Pedido, on_delete=models.CASCADE, related_name='promociones_aplicadas')\n    promocion = models.ForeignKey(Promocion, on_delete=models.CASCADE, related_name='aplicaciones')\n    descripcion_resultado = models.TextField()\n    class Meta:\n        db_table = 'promocion_aplicada'",
+        "detail": "api.models.promocion_aplicada",
+        "documentation": {}
+    },
+    {
+        "label": "Sucursal",
+        "kind": 6,
+        "importPath": "api.models.sucursal",
+        "description": "api.models.sucursal",
+        "peekOfCode": "class Sucursal(models.Model):\n    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE, related_name='sucursales')\n    nombre = models.CharField(max_length=255)\n    class Meta:\n        db_table = 'sucursal'",
+        "detail": "api.models.sucursal",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocionSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.beneficio_promocion_serializer",
+        "description": "api.serializers.beneficio_promocion_serializer",
+        "peekOfCode": "class BeneficioPromocionSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = BeneficioPromocion\n        fields = ['id', 'promocion', 'tipo_beneficio', 'producto_bonificado', 'cantidad', 'porcentaje_descuento']",
+        "detail": "api.serializers.beneficio_promocion_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "CanalClienteSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.canal_cliente_serializer",
+        "description": "api.serializers.canal_cliente_serializer",
+        "peekOfCode": "class CanalClienteSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CanalCliente\n        fields = ['id', 'nombre']",
+        "detail": "api.serializers.canal_cliente_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.cliente_serializer",
+        "description": "api.serializers.cliente_serializer",
+        "peekOfCode": "class ClienteSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cliente\n        fields = ['id', 'nombre', 'canal']",
+        "detail": "api.serializers.cliente_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocionSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.condicion_promocion_serializer",
+        "description": "api.serializers.condicion_promocion_serializer",
+        "peekOfCode": "class CondicionPromocionSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CondicionPromocion\n        fields = ['id', 'promocion', 'tipo_condicion', 'valor_min', 'valor_max', 'producto', 'linea_producto', 'bonificacion_descuento']",
+        "detail": "api.serializers.condicion_promocion_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.empresa_serializer",
+        "description": "api.serializers.empresa_serializer",
+        "peekOfCode": "class EmpresaSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Empresa\n        fields = ['id', 'nombre']",
+        "detail": "api.serializers.empresa_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProductoSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.linea_producto_serializer",
+        "description": "api.serializers.linea_producto_serializer",
+        "peekOfCode": "class LineaProductoSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = LineaProducto\n        fields = ['id', 'nombre', 'categoria']",
+        "detail": "api.serializers.linea_producto_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoDetalleSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.pedido_serializer",
+        "description": "api.serializers.pedido_serializer",
+        "peekOfCode": "class PedidoDetalleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = PedidoDetalle\n        fields = ['producto', 'cantidad', 'precio_unitario']\nclass PedidoSerializer(serializers.ModelSerializer):\n    detalles = PedidoDetalleSerializer(many=True)\n    class Meta:\n        model = Pedido\n        fields = ['id', 'cliente', 'sucursal', 'fecha', 'total_monto', 'detalles']",
+        "detail": "api.serializers.pedido_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.pedido_serializer",
+        "description": "api.serializers.pedido_serializer",
+        "peekOfCode": "class PedidoSerializer(serializers.ModelSerializer):\n    detalles = PedidoDetalleSerializer(many=True)\n    class Meta:\n        model = Pedido\n        fields = ['id', 'cliente', 'sucursal', 'fecha', 'total_monto', 'detalles']",
+        "detail": "api.serializers.pedido_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.producto_serializer",
+        "description": "api.serializers.producto_serializer",
+        "peekOfCode": "class ProductoSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Producto\n        fields = ['id', 'nombre', 'codigo', 'marca', 'linea']",
+        "detail": "api.serializers.producto_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.promocion_serializer",
+        "description": "api.serializers.promocion_serializer",
+        "peekOfCode": "class PromocionSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Promocion\n        fields = ['id', 'nombre', 'fecha_inicio', 'fecha_fin', 'tipo_promocion', \n                 'empresa', 'sucursal', 'canal_cliente', 'producto_adicional']",
+        "detail": "api.serializers.promocion_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "SucursalSerializer",
+        "kind": 6,
+        "importPath": "api.serializers.sucursal_serializer",
+        "description": "api.serializers.sucursal_serializer",
+        "peekOfCode": "class SucursalSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Sucursal\n        fields = ['id', 'empresa', 'nombre']",
+        "detail": "api.serializers.sucursal_serializer",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionEngine",
+        "kind": 6,
+        "importPath": "api.services.promocion_engine",
+        "description": "api.services.promocion_engine",
+        "peekOfCode": "class PromocionEngine:\n    \"\"\"\n    Motor principal para la aplicación de promociones a un pedido.\n    Orquesta el filtrado, evaluación de condiciones y cálculo de beneficios.\n    \"\"\"\n    def __init__(self, pedido, detalles):\n        self.pedido = pedido\n        self.detalles = detalles \n        self.promociones_aplicadas = []\n        self.bonificaciones = []",
+        "detail": "api.services.promocion_engine",
+        "documentation": {}
+    },
+    {
+        "label": "BeneficioPromocionViewSet",
+        "kind": 6,
+        "importPath": "api.views.beneficio_promocion_view",
+        "description": "api.views.beneficio_promocion_view",
+        "peekOfCode": "class BeneficioPromocionViewSet(viewsets.ModelViewSet):\n    queryset = BeneficioPromocion.objects.all()\n    serializer_class = BeneficioPromocionSerializer",
+        "detail": "api.views.beneficio_promocion_view",
+        "documentation": {}
+    },
+    {
+        "label": "CanalClienteViewSet",
+        "kind": 6,
+        "importPath": "api.views.canal_cliente_view",
+        "description": "api.views.canal_cliente_view",
+        "peekOfCode": "class CanalClienteViewSet(viewsets.ModelViewSet):\n    queryset = CanalCliente.objects.all()\n    serializer_class = CanalClienteSerializer",
+        "detail": "api.views.canal_cliente_view",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteViewSet",
+        "kind": 6,
+        "importPath": "api.views.cliente_view",
+        "description": "api.views.cliente_view",
+        "peekOfCode": "class ClienteViewSet(viewsets.ModelViewSet):\n    queryset = Cliente.objects.all()\n    serializer_class = ClienteSerializer",
+        "detail": "api.views.cliente_view",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionPromocionViewSet",
+        "kind": 6,
+        "importPath": "api.views.condicion_promocion_view",
+        "description": "api.views.condicion_promocion_view",
+        "peekOfCode": "class CondicionPromocionViewSet(viewsets.ModelViewSet):\n    queryset = CondicionPromocion.objects.all()\n    serializer_class = CondicionPromocionSerializer",
+        "detail": "api.views.condicion_promocion_view",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaViewSet",
+        "kind": 6,
+        "importPath": "api.views.empresa_view",
+        "description": "api.views.empresa_view",
+        "peekOfCode": "class EmpresaViewSet(viewsets.ModelViewSet):\n    queryset = Empresa.objects.all()\n    serializer_class = EmpresaSerializer",
+        "detail": "api.views.empresa_view",
+        "documentation": {}
+    },
+    {
+        "label": "LineaProductoViewSet",
+        "kind": 6,
+        "importPath": "api.views.linea_producto_view",
+        "description": "api.views.linea_producto_view",
+        "peekOfCode": "class LineaProductoViewSet(viewsets.ModelViewSet):\n    queryset = LineaProducto.objects.all()\n    serializer_class = LineaProductoSerializer",
+        "detail": "api.views.linea_producto_view",
+        "documentation": {}
+    },
+    {
+        "label": "PedidoViewSet",
+        "kind": 6,
+        "importPath": "api.views.pedido_view",
+        "description": "api.views.pedido_view",
+        "peekOfCode": "class PedidoViewSet(viewsets.ViewSet):\n    @transaction.atomic\n    def create(self, request):\n        try:\n            cliente_id = request.data.get('cliente')\n            sucursal_id = request.data.get('sucursal')\n            detalles = request.data.get('detalles', [])\n            cliente = Cliente.objects.get(id=cliente_id)\n            sucursal = Sucursal.objects.get(id=sucursal_id)\n        except ObjectDoesNotExist:",
+        "detail": "api.views.pedido_view",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoViewSet",
+        "kind": 6,
+        "importPath": "api.views.producto_view",
+        "description": "api.views.producto_view",
+        "peekOfCode": "class ProductoViewSet(viewsets.ModelViewSet):\n    queryset = Producto.objects.all()\n    serializer_class = ProductoSerializer",
+        "detail": "api.views.producto_view",
+        "documentation": {}
+    },
+    {
+        "label": "PromocionViewSet",
+        "kind": 6,
+        "importPath": "api.views.promocion_view",
+        "description": "api.views.promocion_view",
+        "peekOfCode": "class PromocionViewSet(viewsets.ModelViewSet):\n    queryset = Promocion.objects.all()\n    serializer_class = PromocionSerializer",
+        "detail": "api.views.promocion_view",
+        "documentation": {}
+    },
+    {
+        "label": "SucursalViewSet",
+        "kind": 6,
+        "importPath": "api.views.sucursal_view",
+        "description": "api.views.sucursal_view",
+        "peekOfCode": "class SucursalViewSet(viewsets.ModelViewSet):\n    queryset = Sucursal.objects.all()\n    serializer_class = SucursalSerializer",
+        "detail": "api.views.sucursal_view",
+        "documentation": {}
+    },
+    {
+        "label": "ApiConfig",
+        "kind": 6,
+        "importPath": "api.apps",
+        "description": "api.apps",
+        "peekOfCode": "class ApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'api'",
+        "detail": "api.apps",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "api.routers",
+        "description": "api.routers",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'empresas', EmpresaViewSet)\nrouter.register(r'sucursales', SucursalViewSet)\nrouter.register(r'pedidos', PedidoViewSet, basename='pedido')\nrouter.register(r'canales', CanalClienteViewSet)\nrouter.register(r'clientes', ClienteViewSet)\nrouter.register(r'lineas', LineaProductoViewSet)\nrouter.register(r'productos', ProductoViewSet)\nrouter.register(r'promociones', PromocionViewSet)\nrouter.register(r'condiciones', CondicionPromocionViewSet)",
+        "detail": "api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "api.routers",
+        "description": "api.routers",
+        "peekOfCode": "urlpatterns = router.urls",
+        "detail": "api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "ParcialTLP.asgi",
+        "description": "ParcialTLP.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "ParcialTLP.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-odxx+(#&y(lt+%8cn$hf^$0u)tn34%#%sc^dhjt$yx)4du1-w='\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-odxx+(#&y(lt+%8cn$hf^$0u)tn34%#%sc^dhjt$yx)4du1-w='\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'api',",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'api',\n    # Apps de terceros\n    'rest_framework',",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',  \n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "ROOT_URLCONF = 'ParcialTLP.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'ParcialTLP.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'mi_basedatos',\n        'USER': 'usuarioapp',\n        'PASSWORD': 'AppPass456',\n        'HOST': 'localhost',  ",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'mi_basedatos',\n        'USER': 'usuarioapp',\n        'PASSWORD': 'AppPass456',\n        'HOST': 'localhost',  \n        'PORT': '3306',      \n    }\n}",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_ALL_ORIGINS",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "ParcialTLP.settings",
+        "description": "ParcialTLP.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ParcialTLP.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "ParcialTLP.urls",
+        "description": "ParcialTLP.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include(router.urls)),\n]",
+        "detail": "ParcialTLP.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "ParcialTLP.wsgi",
+        "description": "ParcialTLP.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "ParcialTLP.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ParcialTLP.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,149 @@
+{
+  "info": {
+    "_postman_id": "c5e5b1e0-1234-5678-9abc-caso5prueba",
+    "name": "Motor Promociones - Caso 5",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Empresa",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"EMPRESA5\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/empresas/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "empresas", ""] }
+      }
+    },
+    {
+      "name": "Crear Sucursal",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Sucursal Central\",\n  \"empresa\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/sucursales/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "sucursales", ""] }
+      }
+    },
+    {
+      "name": "Crear Canal Cliente MAYORISTA",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"MAYORISTA\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/canales/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "canales", ""] }
+      }
+    },
+    {
+      "name": "Crear Cliente MAYORISTA",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Cliente Mayorista\",\n  \"canal\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/clientes/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "clientes", ""] }
+      }
+    },
+    {
+      "name": "Crear Línea Producto SALSAS / SILLAO",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"SALSAS / SILLAO\",\n  \"categoria\": \"Alimentos\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/lineas/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "lineas", ""] }
+      }
+    },
+    {
+      "name": "Crear Producto Salsa",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"SILLAO CLÁSICO 1L\",\n  \"codigo\": \"SAL001\",\n  \"marca\": \"SILLAO\",\n  \"linea\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/productos/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "productos", ""] }
+      }
+    },
+    {
+      "name": "Crear Promoción Caso 5",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Descuento Salsas Mayorista\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"descuento\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/promociones/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "promociones", ""] }
+      }
+    },
+    {
+      "name": "Crear Condición Caso 5 (por importe, línea SALSAS / SILLAO)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"importe\",\n  \"valor_min\": 300,\n  \"linea_producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/condiciones/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "condiciones", ""] }
+      }
+    },
+    {
+      "name": "Crear Beneficio Caso 5 (descuento 5%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"descuento\",\n  \"producto_bonificado\": null,\n  \"cantidad\": null,\n  \"porcentaje_descuento\": 5\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/beneficios/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "beneficios", ""] }
+      }
+    },
+    {
+      "name": "Pedido Caso 5 (S/300 en Salsa, espera 5%)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    { \"producto\": 1, \"cantidad\": 30, \"precio_unitario\": 10.0 }\n  ]\n}"
+        },
+        "url": { "raw": "http://localhost:8000/api/pedidos/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["api", "pedidos", ""] }
+      }
+    }
+  ]
+}
