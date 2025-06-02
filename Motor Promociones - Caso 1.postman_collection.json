@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "078bc060-df64-4139-8809-bf49dd5a15c7",
+		"name": "Motor Promociones - Caso 1",
+		"description": "Colección para probar el Caso 1 del motor de promociones (bonificación por volumen)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38779341"
+	},
+	"item": [
+		{
+			"name": "Crear Empresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"ALICORP\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/empresas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"empresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Sucursal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Sucursal Lima\",\n  \"empresa\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sucursales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sucursales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Canal Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"MAYORISTA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/canales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"canales",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Cliente Mayorista\",\n  \"canal\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/clientes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Línea Producto Vinos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Vinos\",\n  \"categoria\": \"Bebidas\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lineas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Producto Vino",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"VINO BORGOÑA ABOCADO 750ML X12\",\n  \"codigo\": \"AC0353\",\n  \"marca\": \"BORGOÑA\",\n  \"linea\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Producto Vino Bonificado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"VINO BORGOÑA x750ml-BONIF\",\n  \"codigo\": \"VO010B\",\n  \"marca\": \"BORGOÑA\",\n  \"linea\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Promoción Caso 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Promo Vino x Volumen\",\n  \"fecha_inicio\": \"2025-01-01\",\n  \"fecha_fin\": \"2025-12-31\",\n  \"tipo_promocion\": \"bonificacion\",\n  \"empresa\": 1,\n  \"sucursal\": 1,\n  \"canal_cliente\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/promociones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"promociones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Condición Caso 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_condicion\": \"cantidad\",\n  \"valor_min\": 48,\n  \"producto\": 1,\n  \"bonificacion_descuento\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/condiciones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"condiciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Beneficio Caso 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"promocion\": 1,\n  \"tipo_beneficio\": \"bonificacion\",\n  \"producto_bonificado\": 2,\n  \"cantidad\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/beneficios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"beneficios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Pedido Caso 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": 1,\n  \"sucursal\": 1,\n  \"detalles\": [\n    {\n      \"producto\": 1,\n      \"cantidad\": 48,\n      \"precio_unitario\": 10.0\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
